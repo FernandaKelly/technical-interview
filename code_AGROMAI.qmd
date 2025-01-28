@@ -10,6 +10,7 @@ date-format: short
 toc: true 
 format: 
     html: 
+      embed-resources: true
       code-fold: false 
       code-tools: true  
       theme: 
