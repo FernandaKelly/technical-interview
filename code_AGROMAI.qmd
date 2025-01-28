@@ -223,7 +223,7 @@ Para *Total number of sales per category* foi considerado *sale_id* como indicad
 ```{r}
 sales_data_R %>% 
   dplyr::group_by(category_Mode) %>% 
-  dplyr::count()
+  dplyr::count() 
 ```
 
 Para *Average price per category*:
@@ -492,6 +492,14 @@ customer_purchases_R %>%
     -   Total sales per month
 
 ```{r}
+# sales_data_R <- sales_data_R %>% 
+#   dplyr::mutate(mes_Sale = lubridate::month(sale_date)) %>% 
+#   dplyr::mutate(price = base::ifelse(is.na(price), base::mean(price, na.rm = TRUE), price),
+#                 sales = quantity*price) %>% 
+#   dplyr::group_by(mes_Sale) %>% 
+#   dplyr::mutate(totalSales = sum(sales)) %>% 
+#   dplyr::ungroup()
+
 sales_data_R %>% 
   dplyr::mutate(mes_Sale = lubridate::month(sale_date)) %>% 
   dplyr::mutate(price = base::ifelse(is.na(price), base::mean(price, na.rm = TRUE), price),
@@ -576,12 +584,28 @@ diaSales['7Dias_avg'] = diaSales['quantity'].rolling(window=7).mean()
 
     -   Total sales by category
     -   Include error bars representing standard deviation
+    
+```{r}
+ggplot(sales_data_R) +
+  aes(x = category_Mode, weight = sales) +
+  geom_bar(fill = "#112446") +
+  theme_minimal()
+```
+    
 
 3.  Create a scatter plot showing:
 
     -   Relationship between quantity and price
     -   Color points by category
     -   Add a trend line
+
+```{r}
+ggplot(sales_data_R) +
+  aes(x = quantity, y = price, colour = category_Mode) +
+  geom_jitter(size = 1.5) +
+  scale_color_hue(direction = 1) +
+  theme_minimal()
+```
 
 Requirements: - Use appropriate labels and titles - Include a legend where necessary - Use a consistent color scheme - Save all plots as PNG files
 
