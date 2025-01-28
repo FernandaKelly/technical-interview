@@ -1,0 +1,2485 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Fernanda Kelly R. Silva | www.fernandakellyrs.com">
+<meta name="dcterms.date" content="2027-01-03">
+
+<title>Teste Técnico</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="code_AGROMAI_files/libs/clipboard/clipboard.min.js"></script>
+<script src="code_AGROMAI_files/libs/quarto-html/quarto.js"></script>
+<script src="code_AGROMAI_files/libs/quarto-html/popper.min.js"></script>
+<script src="code_AGROMAI_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="code_AGROMAI_files/libs/quarto-html/anchor.min.js"></script>
+<link href="code_AGROMAI_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="code_AGROMAI_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="code_AGROMAI_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="code_AGROMAI_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="code_AGROMAI_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="code_AGROMAI_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="code_AGROMAI_files/libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: true;
+      }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body>
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <div class="quarto-title-block"><div><h1 class="title">Teste Técnico</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Código</button></div></div>
+            <p class="subtitle lead"><strong>Posição Júnior - Agromai</strong></p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor</div>
+      <div class="quarto-title-meta-contents">
+               <p>Fernanda Kelly R. Silva | www.fernandakellyrs.com </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Data de Publicação</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">01/03/2027</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#instalação-de-pacotes" id="toc-instalação-de-pacotes" class="nav-link active" data-scroll-target="#instalação-de-pacotes">Instalação de pacotes</a></li>
+  <li><a href="#question-1-data-cleaning-and-basic-analysis" id="toc-question-1-data-cleaning-and-basic-analysis" class="nav-link" data-scroll-target="#question-1-data-cleaning-and-basic-analysis">Question 1: <em>Data Cleaning and Basic Analysis</em></a></li>
+  <li><a href="#question-2-data-manipulation-and-aggregation" id="toc-question-2-data-manipulation-and-aggregation" class="nav-link" data-scroll-target="#question-2-data-manipulation-and-aggregation">Question 2: Data Manipulation and Aggregation:</a></li>
+  <li><a href="#question-3-data-visualization" id="toc-question-3-data-visualization" class="nav-link" data-scroll-target="#question-3-data-visualization">Question 3: Data Visualization:</a></li>
+  <li><a href="#question-4-advanced-analytics-required-for-data-scientists-bonus-for-juniors" id="toc-question-4-advanced-analytics-required-for-data-scientists-bonus-for-juniors" class="nav-link" data-scroll-target="#question-4-advanced-analytics-required-for-data-scientists-bonus-for-juniors">Question 4: Advanced Analytics (Required for Data Scientists, Bonus for Juniors):</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="instalação-de-pacotes" class="level1">
+<h1>Instalação de pacotes</h1>
+<p>Ao instalar os pacotes no início de qualquer projeto, garantimos o acesso a um ecossistema padronizado e poderoso, eliminando a necessidade de procurar soluções fragmentadas para diferentes partes do fluxo de trabalho, o que acelera o processo de desenvolvimento e reduz erros.</p>
+<p>Todas as bibliotecas enviadas como necessárias para instalação foram instaladas via terminal utlizando <em>pip install nome-pacote==version</em>.</p>
+<p>É importante ressaltar que estou utilizando a IDE RStudio. Essa IDE é passivel de programação em python através do pacote <a href="https://cran.r-project.org/web/packages/reticulate/index.html">reticulate</a>. Como interface estou utilizando o <a href="https://quarto.org/docs/get-started/hello/rstudio.html">Quarto</a>.</p>
+<pre class="{markdown}"><code>R version 4.4.2 (2024-10-31) -- "Pile of Leaves"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu</code></pre>
+<pre class="{r}"><code>library(tidyverse)
+library(reticulate)
+library(readr)</code></pre>
+<div id="a7f709ab" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pandas==1.3.3</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># numpy==1.21.2</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># scipy==1.7.1</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># matplotlib==3.4.3</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># scikit-learn==0.24.2</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># statsmodels==0.12.2</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="question-1-data-cleaning-and-basic-analysis" class="level1">
+<h1>Question 1: <em>Data Cleaning and Basic Analysis</em></h1>
+<p>Work with sales data to demonstrate your ability to handle missing values and perform basic statistical analysis.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Python</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">R</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ol type="1">
+<li>Load and examine the dataset</li>
+</ol>
+<p>Fazendo upload da base de dados.</p>
+<div id="a77ea760" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sales_data <span class="op">=</span> pandas.read_csv(<span class="st">"technical-interview/data/sales_data.csv"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>customer_purchases <span class="op">=</span> pandas.read_csv(<span class="st">"technical-interview/data/customer_purchases.csv"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Verifiquei que não há chave entre as bases para um futuro join.</p>
+<ol start="2" type="1">
+<li><p>Clean the data:</p>
+<ul>
+<li>Handle missing values in the ‘price’ column (replace with mean)</li>
+<li>Handle missing values in the ‘category’ column (replace with mode)</li>
+</ul></li>
+</ol>
+<p>É possível notar que há 30 valores ausentes na coluna <em>category</em>. Como é solicitado, é necessário inserir a moda (mode), que pela frequência é a categoria <em>Electronics</em>, visto que a definição de moda é aquela categoria/número que mais se repete.</p>
+<div id="3713b757" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>frequency_table <span class="op">=</span> sales_data[<span class="st">'category'</span>].value_counts(dropna<span class="op">=</span><span class="va">False</span>).reset_index()</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(frequency_table)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        category  count
+0    Electronics    208
+1  Home &amp; Garden    201
+2         Sports    197
+3       Clothing    185
+4          Books    179
+5            NaN     30</code></pre>
+</div>
+</div>
+<p>No caso da variável <strong>price</strong>, utilizarei a função <em>describe</em>, visto que essa variável é numérica continua. Logo, podemos concluir que há 49 valores ausentes, sua média é de 101.88 e demais informações de 1°,2°, 3° quartil, minimo e máximo.</p>
+<div id="aa08bec4" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>summary_table <span class="op">=</span> sales_data[<span class="st">'price'</span>].describe()</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>summary_table</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>count    951.000000
+mean     101.883052
+std       30.379179
+min       12.359485
+25%       81.635403
+50%      101.314344
+75%      121.246977
+max      195.793227
+Name: price, dtype: float64</code></pre>
+</div>
+</div>
+<p>O número de valores ausentes é:</p>
+<div id="4bf3fa8a" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>valor_na <span class="op">=</span> sales_data[<span class="st">'price'</span>].isna().<span class="bu">sum</span>()</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>valor_na</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<pre><code>np.int64(49)</code></pre>
+</div>
+</div>
+<p>Para que não haja erro de consultas futuramente, irei criar uma nova variável com essas alterações. Essa variável será denominada por <em>category_Mode</em> e, para variável <em>price</em> como <em>price_Mean</em>. Sendo assim,</p>
+<div id="b104afaf" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>Mean_price <span class="op">=</span> sales_data[<span class="st">'price'</span>].mean()</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'price_Mean'</span>]  <span class="op">=</span> sales_data[<span class="st">'price'</span>].fillna(Mean_price)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>Mode_category <span class="op">=</span> sales_data[<span class="st">'category'</span>].mode()[<span class="dv">0</span>]</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'category_Mode'</span>]  <span class="op">=</span> sales_data[<span class="st">'category'</span>].fillna(Mode_category)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Avaliando os NA’s, veja que não há mais valores ausentes.</p>
+<div id="517145df" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'price_Mean'</span>].isna().<span class="bu">sum</span>()</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'category_Mode'</span>].isna().<span class="bu">sum</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>np.int64(0)</code></pre>
+</div>
+</div>
+<ul>
+<li>Convert ‘sale_date’ to datetime</li>
+</ul>
+<p>Em relação a variável <em>sale_date</em> temos que esta pertence a classe <em>Date</em>, para que esta seja <em>datetime</em>,</p>
+<div id="36f0252d" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'sale_date'</span>] <span class="op">=</span> pandas.to_datetime(sales_data[<span class="st">'sale_date'</span>])</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="3" type="1">
+<li>Create a summary of:</li>
+</ol>
+<p>Para as tabelas resumo estou considerando as variáveis <em>sem</em> os valores ausentes.</p>
+<ul>
+<li>Total number of sales per category</li>
+</ul>
+<div id="327dd77d" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>totalNumber_category <span class="op">=</span> sales_data.groupby(<span class="st">'category_Mode'</span>).size()</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>totalNumber_category</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<pre><code>category_Mode
+Books            179
+Clothing         185
+Electronics      238
+Home &amp; Garden    201
+Sports           197
+dtype: int64</code></pre>
+</div>
+</div>
+<ul>
+<li>Average price per category</li>
+</ul>
+<p>Para <em>Average price per category</em>:</p>
+<div id="ba5025f6" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>averagePrice_category <span class="op">=</span> sales_data.groupby(<span class="st">'category_Mode'</span>).mean(<span class="st">'price'</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>averagePrice_category</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">sale_id</th>
+<th data-quarto-table-cell-role="th">price</th>
+<th data-quarto-table-cell-role="th">quantity</th>
+<th data-quarto-table-cell-role="th">price_Mean</th>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">category_Mode</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Books</td>
+<td>497.307263</td>
+<td>101.690430</td>
+<td>5.117318</td>
+<td>101.695811</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Clothing</td>
+<td>508.735135</td>
+<td>103.822460</td>
+<td>5.118919</td>
+<td>103.707144</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Electronics</td>
+<td>505.848739</td>
+<td>100.468345</td>
+<td>4.743697</td>
+<td>100.533731</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Home &amp; Garden</td>
+<td>467.104478</td>
+<td>102.661415</td>
+<td>5.228856</td>
+<td>102.614946</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Sports</td>
+<td>523.279188</td>
+<td>101.188330</td>
+<td>5.025381</td>
+<td>101.223595</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>Number of missing values handled</li>
+</ul>
+<p>Para <em>Number of missing values handled</em>, vimos que manipulamos um total de 79 caselas.</p>
+<div id="995ad8fe" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'price'</span>].isna().<span class="bu">sum</span>()</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'category'</span>].isna().<span class="bu">sum</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<pre><code>np.int64(30)</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Fazendo upload da base de dados.</p>
+<pre class="{r}"><code>customer_purchases_R &lt;- readr::read_csv("technical-interview/data/customer_purchases.csv")
+sales_data_R &lt;- readr::read_csv("technical-interview/data/sales_data.csv")</code></pre>
+<p>É possível notar que há 30 valores ausentes na coluna <em>category</em>. Como é solicitado, é necessário inserir a moda (mode), que pela frequência é a categoria <em>Electronics</em>, visto que a definição de moda é aquela categoria/número que mais se repete.</p>
+<pre class="{r}"><code>janitor::tabyl(sales_data_R$category, show_na = TRUE)</code></pre>
+<p>No caso da variável <strong>price</strong>, utilizarei a função <em>summary</em>, visto que essa variável é numérica continua. Logo, podemos concluir que há 49 valores ausentes, sua média é de 101.88 e demais informações de 1°,2°, 3° quartil, minimo e máximo.</p>
+<pre class="{r}"><code>summary(sales_data_R$price)</code></pre>
+<p>Para que não haja erro de consultas futuramente, irei criar uma nova variável com essas alterações. Essa variável será denominada por <em>category_Mode</em> e, para variável <em>price</em> como <em>price_Mean</em>. Sendo assim,</p>
+<pre class="{r}"><code>sales_data_R &lt;- sales_data_R %&gt;% 
+  dplyr::mutate(category_Mode = base::ifelse(is.na(category), "Electronics", category),
+                price_Mean = base::ifelse(is.na(price), base::mean(price, na.rm = TRUE), price))</code></pre>
+<p>Avaliando a variável <em>category_Mode</em>:</p>
+<pre class="{r}"><code>janitor::tabyl(sales_data_R$category_Mode, show_na = TRUE)</code></pre>
+<p>Avaliando a variável <em>price_Mean</em>:</p>
+<pre class="{r}"><code>summary(sales_data_R$price_Mean)</code></pre>
+<p>Veja que não há mais valores ausentes.</p>
+<p>Em relação a variável <em>sale_date</em> temos que esta pertence a classe <em>Date</em>, para que esta seja <em>datetime</em>,</p>
+<pre class="{r}"><code>sales_data_R &lt;- sales_data_R %&gt;% 
+  dplyr::mutate(sale_date_datetime = as.POSIXct(sale_date))</code></pre>
+<p>Avaliando,</p>
+<pre class="{r}"><code>class(sales_data_R$sale_date_datetime)</code></pre>
+<p>Para as tabelas resumo estou considerando as variáveis <em>sem</em> os valores ausentes,</p>
+<p>Para <em>Total number of sales per category</em> foi considerado <em>sale_id</em> como indicador para o número de vendas. Veja abaixo o resultado.</p>
+<pre class="{r}"><code>sales_data_R %&gt;% 
+  dplyr::group_by(category_Mode) %&gt;% 
+  dplyr::count()</code></pre>
+<p>Para <em>Average price per category</em>:</p>
+<pre class="{r}"><code>sales_data_R %&gt;% 
+  dplyr::group_by(category_Mode) %&gt;% 
+  dplyr::summarise(average_price =  mean(price_Mean))</code></pre>
+<p>Para <em>Number of missing values handled</em>, vimos que manipulamos um total de 79 caselas.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-2-data-manipulation-and-aggregation" class="level1">
+<h1>Question 2: Data Manipulation and Aggregation:</h1>
+<p>Show your skills in transforming and aggregating data to derive meaningful insights.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Python</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">R</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<ol type="1">
+<li>Calculate the following metrics per customer:</li>
+</ol>
+<p>O <em>per customer</em> é um pouco ambíguo e, por isso, abaixo estão as medidas em sua totalidade e agrupadas por <em>customer_id</em>.</p>
+<ul>
+<li>Total amount spent</li>
+</ul>
+<div id="c300f2ed" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>amountSpent <span class="op">=</span> customer_purchases[<span class="st">'amount'</span>].<span class="bu">sum</span>().<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>amountSpent</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<pre><code>np.float64(101993.11)</code></pre>
+</div>
+</div>
+<div id="2eb92fd1" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>amountSpent_PC <span class="op">=</span> customer_purchases.groupby(<span class="st">'customer_id'</span>, as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">'amount'</span>].<span class="bu">sum</span>()</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>amountSpent_PC</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="13">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">customer_id</th>
+<th data-quarto-table-cell-role="th">amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>CUST_001</td>
+<td>1550.75</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>CUST_002</td>
+<td>1313.75</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>CUST_003</td>
+<td>1323.92</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>CUST_004</td>
+<td>1102.69</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>CUST_005</td>
+<td>1199.27</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">95</td>
+<td>CUST_096</td>
+<td>1382.41</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">96</td>
+<td>CUST_097</td>
+<td>958.23</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">97</td>
+<td>CUST_098</td>
+<td>646.45</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">98</td>
+<td>CUST_099</td>
+<td>2000.90</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">99</td>
+<td>CUST_100</td>
+<td>887.31</td>
+</tr>
+</tbody>
+</table>
+
+<p>100 rows × 2 columns</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>Average purchase value</li>
+</ul>
+<div id="938337bf" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>amountMean <span class="op">=</span> customer_purchases[<span class="st">'amount'</span>].mean()</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>amountMean</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="14">
+<pre><code>np.float64(101.99311)</code></pre>
+</div>
+</div>
+<div id="4f85e71d" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>amountMean_PC <span class="op">=</span> customer_purchases.groupby(<span class="st">'customer_id'</span>, as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">'amount'</span>].mean()</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>amountMean_PC</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">customer_id</th>
+<th data-quarto-table-cell-role="th">amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>CUST_001</td>
+<td>96.921875</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>CUST_002</td>
+<td>101.057692</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>CUST_003</td>
+<td>110.326667</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>CUST_004</td>
+<td>100.244545</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>CUST_005</td>
+<td>109.024545</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">95</td>
+<td>CUST_096</td>
+<td>106.339231</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">96</td>
+<td>CUST_097</td>
+<td>106.470000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">97</td>
+<td>CUST_098</td>
+<td>92.350000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">98</td>
+<td>CUST_099</td>
+<td>111.161111</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">99</td>
+<td>CUST_100</td>
+<td>98.590000</td>
+</tr>
+</tbody>
+</table>
+
+<p>100 rows × 2 columns</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>Number of purchases</li>
+</ul>
+<p>O número de compras é o número total de observações do banco de dados, visto que não há <em>purchase_id</em> com repetição. Porém, para cada <em>customer_id</em> teremos os seguintes resultados:</p>
+<div id="7ddd379e" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>amountCount_PC <span class="op">=</span> customer_purchases.groupby(<span class="st">'customer_id'</span>, as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">'purchase_id'</span>].count()</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>amountCount_PC</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="16">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">customer_id</th>
+<th data-quarto-table-cell-role="th">purchase_id</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>CUST_001</td>
+<td>16</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>CUST_002</td>
+<td>13</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>CUST_003</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>CUST_004</td>
+<td>11</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>CUST_005</td>
+<td>11</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">95</td>
+<td>CUST_096</td>
+<td>13</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">96</td>
+<td>CUST_097</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">97</td>
+<td>CUST_098</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">98</td>
+<td>CUST_099</td>
+<td>18</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">99</td>
+<td>CUST_100</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+
+<p>100 rows × 2 columns</p>
+</div>
+</div>
+</div>
+</div>
+<p>Logo, se consideramos o número de compras por customer, teremos somente 100 compradores.</p>
+<div id="53d773bc" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>amountCount <span class="op">=</span> customer_purchases.groupby(<span class="st">'customer_id'</span>).size()</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>amountCount</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<pre><code>customer_id
+CUST_001    16
+CUST_002    13
+CUST_003    12
+CUST_004    11
+CUST_005    11
+            ..
+CUST_096    13
+CUST_097     9
+CUST_098     7
+CUST_099    18
+CUST_100     9
+Length: 100, dtype: int64</code></pre>
+</div>
+</div>
+<ul>
+<li>Most frequently bought category</li>
+</ul>
+<p>A categoria mais frequente é a <em>Home &amp; Garden</em>.</p>
+<div id="1d432740" class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>freqBought_category <span class="op">=</span> customer_purchases.groupby(<span class="st">'category'</span>).size()</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>freqBought_category</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="18">
+<pre><code>category
+Books            182
+Clothing         186
+Electronics      202
+Home &amp; Garden    225
+Sports           205
+dtype: int64</code></pre>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Create a summary DataFrame with:</li>
+</ol>
+<ul>
+<li>Top 5 customers by total spend</li>
+</ul>
+<div id="10e28ca0" class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>top5_customer <span class="op">=</span> (customer_purchases.groupby(<span class="st">'customer_id'</span>)</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>          .agg(somaAmount<span class="op">=</span>(<span class="st">'amount'</span>, <span class="st">'sum'</span>))  <span class="co"># Calculando a soma da coluna 'amount'</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>          .reset_index()  <span class="co"># Para garantir que 'customer_id' seja uma coluna normal</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>          .sort_values(by<span class="op">=</span><span class="st">'somaAmount'</span>, ascending<span class="op">=</span><span class="va">False</span>))  <span class="co"># Ordenando pela soma em ordem decrescente</span></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>top5_customer</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="19">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">customer_id</th>
+<th data-quarto-table-cell-role="th">somaAmount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">61</td>
+<td>CUST_062</td>
+<td>2102.22</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">89</td>
+<td>CUST_090</td>
+<td>2040.24</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">98</td>
+<td>CUST_099</td>
+<td>2000.90</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">91</td>
+<td>CUST_092</td>
+<td>1779.33</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">32</td>
+<td>CUST_033</td>
+<td>1775.29</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">90</td>
+<td>CUST_091</td>
+<td>480.91</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">39</td>
+<td>CUST_040</td>
+<td>459.16</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">82</td>
+<td>CUST_083</td>
+<td>450.57</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">10</td>
+<td>CUST_011</td>
+<td>373.26</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">30</td>
+<td>CUST_031</td>
+<td>356.43</td>
+</tr>
+</tbody>
+</table>
+
+<p>100 rows × 2 columns</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>Bottom 5 customers by total spend</li>
+</ul>
+<div id="edef2618" class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>top5_customer <span class="op">=</span> (customer_purchases.groupby(<span class="st">'customer_id'</span>)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>          .agg(somaAmount<span class="op">=</span>(<span class="st">'amount'</span>, <span class="st">'sum'</span>))  <span class="co"># Calculando a soma da coluna 'amount'</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>          .reset_index()  <span class="co"># Para garantir que 'customer_id' seja uma coluna normal</span></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>          .sort_values(by<span class="op">=</span><span class="st">'somaAmount'</span>, ascending<span class="op">=</span><span class="va">True</span>))  <span class="co"># Ordenando pela soma em ordem crescente</span></span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>top5_customer</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="20">
+<div>
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">customer_id</th>
+<th data-quarto-table-cell-role="th">somaAmount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">30</td>
+<td>CUST_031</td>
+<td>356.43</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">10</td>
+<td>CUST_011</td>
+<td>373.26</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">82</td>
+<td>CUST_083</td>
+<td>450.57</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">39</td>
+<td>CUST_040</td>
+<td>459.16</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">90</td>
+<td>CUST_091</td>
+<td>480.91</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">32</td>
+<td>CUST_033</td>
+<td>1775.29</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">91</td>
+<td>CUST_092</td>
+<td>1779.33</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">98</td>
+<td>CUST_099</td>
+<td>2000.90</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">89</td>
+<td>CUST_090</td>
+<td>2040.24</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">61</td>
+<td>CUST_062</td>
+<td>2102.22</td>
+</tr>
+</tbody>
+</table>
+
+<p>100 rows × 2 columns</p>
+</div>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Calculate the monthly purchase trends:</li>
+</ol>
+<p>Aqui irei utilizar o banco de dados sales_data.</p>
+<ul>
+<li>Total sales per month</li>
+</ul>
+<p>É necessário fazer a tratativa de datas.</p>
+<div id="5cf812d3" class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'sale_date'</span>] <span class="op">=</span> pandas.to_datetime(sales_data[<span class="st">'sale_date'</span>])</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Como o interesse da medida é por mês, a ideia é extrair da data somente o mês.</p>
+<div id="b98b2863" class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'mes_Sale'</span>] <span class="op">=</span> sales_data[<span class="st">'sale_date'</span>].dt.month</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Há, desde o início, a prerrogativa de trataiva dos valores ausente da variável <em>price</em> com sua respectiva média, sendo assim:</p>
+<div id="2087ec50" class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>mean_price <span class="op">=</span> sales_data[<span class="st">'price'</span>].mean() </span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'price'</span>] <span class="op">=</span> sales_data[<span class="st">'price'</span>].fillna(mean_price) </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>É importante ressaltar que não há em escrito que a variável price seja por unidade, mas como há a variável <em>quantity</em> e para um bom analista, tira-se por base que a variável <em>price</em> é por unidade. Sendo assim, devemos multiplicar o preço pelo número de unidades para alcançar o valor real gasto na compra.</p>
+<div id="eee43f98" class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'sales'</span>] <span class="op">=</span> sales_data[<span class="st">'price'</span>]<span class="op">*</span>sales_data[<span class="st">'quantity'</span>]</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>A solicitação é o valor gasto por mês, logo há a necessidade de agrupar por mês o valor total gasto na compra.</p>
+<div id="f95141e0" class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'totalSales'</span>] <span class="op">=</span> sales_data.groupby(<span class="st">'mes_Sale'</span>)[<span class="st">'sales'</span>].transform(<span class="st">'sum'</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>A seguir a tabela resultado:</p>
+<div id="3db88076" class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>distinct_sales_data <span class="op">=</span> sales_data.drop_duplicates(subset<span class="op">=</span>[<span class="st">'mes_Sale'</span>])</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(distinct_sales_data)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     sale_id  sale_date       category       price  quantity  price_Mean  \
+0          1 2023-01-01  Home &amp; Garden  101.883052         6  101.883052   
+31        32 2023-02-01  Home &amp; Garden   98.371154         1   98.371154   
+59        60 2023-03-01       Clothing   76.665499         3   76.665499   
+90        91 2023-04-01          Books   61.587119         1   61.587119   
+120      121 2023-05-01       Clothing  107.680892         2  107.680892   
+151      152 2023-06-01    Electronics  153.124019         9  153.124019   
+181      182 2023-07-01          Books  120.445021         5  120.445021   
+212      213 2023-08-01          Books   87.394395         4   87.394395   
+243      244 2023-09-01          Books  118.987955         8  118.987955   
+273      274 2023-10-01  Home &amp; Garden  133.261107         3  133.261107   
+304      305 2023-11-01          Books  132.208952         2  132.208952   
+334      335 2023-12-01  Home &amp; Garden   92.762918         5   92.762918   
+
+     category_Mode  mes_Sale        sales    totalSales  
+0    Home &amp; Garden         1   611.298313  47466.125884  
+31   Home &amp; Garden         2    98.371154  42919.491076  
+59        Clothing         3   229.996498  43805.601813  
+90           Books         4    61.587119  46116.775448  
+120       Clothing         5   215.361784  45649.176138  
+151    Electronics         6  1378.116172  49171.638869  
+181          Books         7   602.225105  50650.744834  
+212          Books         8   349.577582  47388.221534  
+243          Books         9   951.903636  44419.928465  
+273  Home &amp; Garden        10   399.783322  32468.332365  
+304          Books        11   264.417905  29878.150269  
+334  Home &amp; Garden        12   463.814591  31286.220835  </code></pre>
+</div>
+</div>
+<ul>
+<li>Average purchase value per month</li>
+</ul>
+<p>Como este caso é para a compra, seguiremos a mesma lógica da questão anterior, porém com o banco de dados <em>customer</em>. É importante ressaltar que no caso da variável <em>amount</em> não temos valores faltantes.</p>
+<div id="ae3ac9e2" class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'purchase_date'</span>] <span class="op">=</span> pandas.to_datetime(customer_purchases[<span class="st">'purchase_date'</span>])</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'mes_Purchase'</span>] <span class="op">=</span> customer_purchases[<span class="st">'purchase_date'</span>].dt.month</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'totalCustomer'</span>] <span class="op">=</span> customer_purchases.groupby(<span class="st">'mes_Purchase'</span>)[<span class="st">'amount'</span>].transform(<span class="st">'mean'</span>)</span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>distinct_customer_data <span class="op">=</span> customer_purchases.drop_duplicates(subset<span class="op">=</span>[<span class="st">'mes_Purchase'</span>])</span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(distinct_customer_data)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     purchase_id customer_id purchase_date       category  amount  \
+0             52    CUST_004    2023-01-01    Electronics  108.36   
+122          230    CUST_097    2023-02-01          Books   91.00   
+207           82    CUST_044    2023-03-01         Sports  125.50   
+308          656    CUST_018    2023-04-02       Clothing   94.02   
+409          856    CUST_079    2023-05-01  Home &amp; Garden   72.28   
+507          373    CUST_099    2023-06-01         Sports   97.69   
+620          275    CUST_001    2023-07-01         Sports  135.30   
+700          947    CUST_094    2023-08-01         Sports  113.58   
+813          382    CUST_097    2023-09-01          Books  126.37   
+899          669    CUST_027    2023-10-01       Clothing  115.95   
+
+     mes_Purchase  totalCustomer  
+0               1     102.720328  
+122             2     104.238824  
+207             3     101.432079  
+308             4     100.293267  
+409             5     101.720102  
+507             6     103.816018  
+620             7     101.929250  
+700             8     102.948850  
+813             9     100.950814  
+899            10      99.579802  </code></pre>
+</div>
+</div>
+<ul>
+<li>Bonus: Identify any customers who haven’t made a purchase in the last 3 months</li>
+</ul>
+<p>Utilizando a data de 27/01/2025 como data diária, no banco de dados oferecido todos os clientes não fizeram compras nos últimos 3 meses. Devido a este caso, vou utilizar a data máxima do banco de dados que é 2023-10-27 como referência. Sendo assim, teremos <em>5</em> clientes que não compram há mais de 3 meses.</p>
+<ul>
+<li>CUST_041</li>
+<li>CUST_048</li>
+<li>CUST_031</li>
+<li>CUST_016</li>
+<li>CUST_067</li>
+</ul>
+<p>Para chegar a esta conclusão utilizei os seguintes passo:</p>
+<ul>
+<li>Criando a coluna com data especificada e inserindo no banco de dados:</li>
+</ul>
+<div id="d6304d72" class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>data_estudo <span class="op">=</span> pandas.to_datetime(<span class="st">"2023-10-27"</span>)</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'data_estudo'</span>] <span class="op">=</span> data_estudo</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Para que haja a dioferença de datas, ambas precisam estar na mesma classe:</li>
+</ul>
+<div id="728d89b4" class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'data_estudo'</span>] <span class="op">=</span> pandas.to_datetime(customer_purchases[<span class="st">'data_estudo'</span>])</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'purchase_date'</span>] <span class="op">=</span> pandas.to_datetime(customer_purchases[<span class="st">'purchase_date'</span>])</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Fazendo a diferença entre as datas e contabilizando o número de dias, lembrando que o nosso interesse é em contar aqueles que não compram a mais de 3 meses (90 dias).</li>
+</ul>
+<div id="ff30114a" class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'puchase_Day'</span>] <span class="op">=</span> (customer_purchases[<span class="st">'purchase_date'</span>] <span class="op">-</span> customer_purchases[<span class="st">'data_estudo'</span>]).dt.days</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Se o interesse é naqueles que não compram a mais de 90 dias, pensei em criar uma dummy com SIM e NÃO para aqueles que não compram a -90 dias, ou seja, o meu interesse é por aquele que será classificado como SIM.</li>
+</ul>
+<div id="fb0cecd8" class="cell" data-execution_count="31">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'puchase_Day3'</span>] <span class="op">=</span> customer_purchases[<span class="st">'puchase_Day'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: <span class="st">'Sim'</span> <span class="cf">if</span> x <span class="op">&lt;</span> <span class="op">-</span><span class="dv">90</span> <span class="cf">else</span> <span class="st">'Não'</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Esse é o momento crucial para a análise, visto que o mesmo customer poderá estar classificado como SIM e NÃO, visto que este customer pode fazer mais de uma compra, inclusive, de produtos diferentes. Ou seja, ele não compra há mais de 90 dias aquele determinado produto, mas comprou outros, o que faz que ele não se encaixe nessa categoria de clientes que não compram há mais de 90 dias.</li>
+</ul>
+<div id="10957fe1" class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>bonusCustomer <span class="op">=</span> customer_purchases.groupby(<span class="st">'customer_id'</span>)[<span class="st">'puchase_Day3'</span>].value_counts().reset_index(name<span class="op">=</span><span class="st">'count'</span>)</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bonusCustomer)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    customer_id puchase_Day3  count
+0      CUST_001          Sim     12
+1      CUST_001          Não      4
+2      CUST_002          Sim     10
+3      CUST_002          Não      3
+4      CUST_003          Sim      9
+..          ...          ...    ...
+190    CUST_098          Não      1
+191    CUST_099          Não     10
+192    CUST_099          Sim      8
+193    CUST_100          Sim      5
+194    CUST_100          Não      4
+
+[195 rows x 3 columns]</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<ol type="1">
+<li><p>Calculate the following metrics per customer:</p>
+<ul>
+<li>Total amount spent</li>
+</ul></li>
+</ol>
+<pre class="{r}"><code>base::sum(customer_purchases_R$amount)</code></pre>
+<ul>
+<li>Average purchase value</li>
+</ul>
+<pre class="{r}"><code>base::mean(customer_purchases_R$amount)</code></pre>
+<ul>
+<li>Number of purchases</li>
+</ul>
+<p>O número de compras é o número total de observações, visto que não há <em>purchase_id</em> com repetição.</p>
+<pre class="{r}"><code>customer_purchases %&gt;% 
+  dplyr::count(purchase_id) </code></pre>
+<p>Porém, se consideramos o número de compras por customer, teremos somente 100 compras.</p>
+<pre class="{r}"><code>customer_purchases %&gt;% 
+dplyr::group_by(customer_id) %&gt;% 
+dplyr::count()</code></pre>
+<ul>
+<li>Most frequently bought category</li>
+</ul>
+<pre class="{r}"><code>customer_purchases_R %&gt;% 
+  dplyr::group_by(category) %&gt;% 
+  dplyr::count()</code></pre>
+<ol start="2" type="1">
+<li><p>Create a summary DataFrame with:</p>
+<ul>
+<li>Top 5 customers by total spend</li>
+</ul></li>
+</ol>
+<pre class="{r}"><code>customer_purchases_R %&gt;% 
+  dplyr::group_by(customer_id) %&gt;% 
+  dplyr::summarise(meanCustomer = base::mean(amount)) %&gt;% 
+  dplyr::arrange(desc(meanCustomer))</code></pre>
+<ul>
+<li>Bottom 5 customers by total spend</li>
+</ul>
+<pre class="{r}"><code>customer_purchases_R %&gt;% 
+  dplyr::group_by(customer_id) %&gt;% 
+  dplyr::summarise(meanCustomer = base::mean(amount)) %&gt;% 
+  dplyr::arrange((meanCustomer))</code></pre>
+<ol start="3" type="1">
+<li><p>Calculate the monthly purchase trends:</p>
+<ul>
+<li>Total sales per month</li>
+</ul></li>
+</ol>
+<pre class="{r}"><code>sales_data_R %&gt;% 
+  dplyr::mutate(mes_Sale = lubridate::month(sale_date)) %&gt;% 
+  dplyr::mutate(price = base::ifelse(is.na(price), base::mean(price, na.rm = TRUE), price),
+                sales = quantity*price) %&gt;% 
+  dplyr::group_by(mes_Sale) %&gt;% 
+  dplyr::mutate(totalSales = sum(sales)) </code></pre>
+<ul>
+<li>Average purchase value per month</li>
+</ul>
+<pre class="{r}"><code>customer_purchases_R %&gt;% 
+  dplyr::mutate(mes_Purchase = lubridate::month(purchase_date)) %&gt;% 
+  dplyr::group_by(mes_Purchase) %&gt;% 
+  dplyr::mutate(totalPurchase = mean(amount)) </code></pre>
+<ul>
+<li>Bonus: Identify any customers who haven’t made a purchase in the last 3 months</li>
+</ul>
+<p>Utilizando a data de 27/01/2025 como data diária, no banco de dados oferecido todos os clientes não fizeram compras nos últimos 3 meses. Devido a este caso, vou utilizar a data máxima do banco de dados que é 2023-10-27 como referência. Sendo assim, teremos <em>5</em> clientes que não compram há mais de 3 meses.</p>
+<ul>
+<li>CUST_041</li>
+<li>CUST_048</li>
+<li>CUST_031</li>
+<li>CUST_016</li>
+<li>CUST_067</li>
+</ul>
+<pre class="{r}"><code>customer_purchases_R %&gt;% 
+  dplyr::mutate(data_estudo = rep("2023-10-27", 1000),
+                data_estudo      = base::as.Date(data_estudo),
+                puchase_Day = purchase_date - data_estudo,
+                puchase_Day3 = base::ifelse(puchase_Day &lt; -90, "Sim", "Não")) %&gt;% 
+  dplyr::group_by(customer_id) %&gt;%
+  dplyr::count(puchase_Day3)</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="question-3-data-visualization" class="level1">
+<h1>Question 3: Data Visualization:</h1>
+<p>Create informative visualizations to communicate data insights effectively.</p>
+<ol type="1">
+<li>Create a line plot showing daily sales trends over time
+<ul>
+<li>Include a 7-day moving average line</li>
+</ul></li>
+</ol>
+<p>Para a construção desse gráfico, vou seguir as seguintes etapas:</p>
+<ul>
+<li>Como vamos trabalhar com data, ela precisa estar na classe desejada.</li>
+</ul>
+<div id="0e62360c" class="cell" data-execution_count="33">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'sale_date'</span>] <span class="op">=</span> pandas.to_datetime(sales_data[<span class="st">'sale_date'</span>])</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>O objetivo é que esse plot seja diário de vendas, por isso, independente do produto, devemos agrupar a quantidade de venda por dia, mas nós não temos mais de uma venda por dia, o que temos variando é a quantidade de vendas, o que faz sentido ter uma média móvel.</li>
+</ul>
+<div id="377cc9d3" class="cell" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>diaSales <span class="op">=</span> sales_data.groupby(<span class="st">'sale_date'</span>)[<span class="st">'quantity'</span>].<span class="bu">sum</span>().reset_index()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Ordenando as datas devido a média a móvel:</li>
+</ul>
+<div id="e8619744" class="cell" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>diaSales <span class="op">=</span> diaSales.sort_values(by<span class="op">=</span><span class="st">'sale_date'</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Calculando a média móvel de 7 dias:</li>
+</ul>
+<div id="d9ea7c02" class="cell" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>diaSales[<span class="st">'7Dias_avg'</span>] <span class="op">=</span> diaSales[<span class="st">'quantity'</span>].rolling(window<span class="op">=</span><span class="dv">7</span>).mean()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Plotando o gráfico:</li>
+</ul>
+<div id="157427db" class="cell" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="co"># matplotlib.pyplot.figure(figsize=(12, 6))</span></span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a><span class="co"># matplotlib.pyplot.plot()(diaSales['sale_date'], diaSales['quantity'], label='Vendas Diárias', color='blue', alpha=0.6)</span></span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a><span class="co"># matplotlib.pyplot.plot(diaSales['sale_date'], diaSales['7Dias_avg'], label='Média Móvel (7 dias)', color='red', linewidth=2)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="1">
+<li><p>Create a bar plot showing:</p>
+<ul>
+<li>Total sales by category</li>
+<li>Include error bars representing standard deviation</li>
+</ul></li>
+<li><p>Create a scatter plot showing:</p>
+<ul>
+<li>Relationship between quantity and price</li>
+<li>Color points by category</li>
+<li>Add a trend line</li>
+</ul></li>
+</ol>
+<p>Requirements: - Use appropriate labels and titles - Include a legend where necessary - Use a consistent color scheme - Save all plots as PNG files</p>
+</section>
+<section id="question-4-advanced-analytics-required-for-data-scientists-bonus-for-juniors" class="level1">
+<h1>Question 4: Advanced Analytics (Required for Data Scientists, Bonus for Juniors):</h1>
+<p>Apply advanced statistical methods and machine learning techniques to solve a complex business problem.</p>
+<ol type="1">
+<li><p>Implement error handling for the following analyses:</p>
+<ul>
+<li>Perform a one-way ANOVA test to compare prices across different categories</li>
+<li>Calculate and plot the confidence intervals for mean prices in each category</li>
+<li>Identify potential outliers using z-scores</li>
+</ul></li>
+<li><p>Debug and fix the following code snippet that attempts to perform a chi-square test:</p></li>
+</ol>
+<div class="sourceCode" id="cb73"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> perform_chi_square(data):</span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>        observed <span class="op">=</span> data.groupby([<span class="st">'category'</span>, <span class="st">'status'</span>]).size()</span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a>        chi2, p_value <span class="op">=</span> stats.chi2_contingency(observed)</span>
+<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> chi2, p_value</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li><p>Implement proper logging to track:</p>
+<ul>
+<li>Any statistical assumptions violations</li>
+<li>Data type mismatches</li>
+<li>Invalid calculations</li>
+</ul></li>
+</ol>
+<p>Your solution should be robust against various edge cases and include appropriate error messages.</p>
+<!-- -->
+
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiada");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiada");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+      for (let i=0; i<annoteTargets.length; i++) {
+        const annoteTarget = annoteTargets[i];
+        const targetCell = annoteTarget.getAttribute("data-target-cell");
+        const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+        const contentFn = () => {
+          const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          if (content) {
+            const tipContent = content.cloneNode(true);
+            tipContent.classList.add("code-annotation-tip-content");
+            return tipContent.outerHTML;
+          }
+        }
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          onShow: (instance) => {
+            selectCodeLines(instance.reference);
+            instance.reference.classList.add('code-annotation-active');
+            window.tippy.hideAll();
+          },
+          onHide: (instance) => {
+            unselectCodeLines();
+            instance.reference.classList.remove('code-annotation-active');
+          },
+          maxWidth: 300,
+          delay: [50, 0],
+          duration: [200, 0],
+          offset: [5, 10],
+          arrow: true,
+          appendTo: function(el) {
+            return el.parentElement.parentElement.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto',
+          placement: 'right',
+          popperOptions: {
+            modifiers: [
+            {
+              name: 'flip',
+              options: {
+                flipVariations: false, // true by default
+                allowedAutoPlacements: ['right'],
+                fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+              },
+            },
+            {
+              name: 'preventOverflow',
+              options: {
+                mainAxis: false,
+                altAxis: false
+              }
+            }
+            ]        
+          }      
+        };
+        window.tippy(annoteTarget, config); 
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Código fonte</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb74" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Teste Técnico"</span></span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "**Posição Júnior - Agromai**"</span></span>
+<span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Fernanda Kelly R. Silva | www.fernandakellyrs.com" </span></span>
+<span id="cb74-5"><a href="#cb74-5" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
+<span id="cb74-6"><a href="#cb74-6" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
+<span id="cb74-7"><a href="#cb74-7" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> pt </span></span>
+<span id="cb74-8"><a href="#cb74-8" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "27/01/2025" </span></span>
+<span id="cb74-9"><a href="#cb74-9" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> short </span></span>
+<span id="cb74-10"><a href="#cb74-10" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true </span></span>
+<span id="cb74-11"><a href="#cb74-11" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb74-12"><a href="#cb74-12" aria-hidden="true" tabindex="-1"></a><span class="co">    html: </span></span>
+<span id="cb74-13"><a href="#cb74-13" aria-hidden="true" tabindex="-1"></a><span class="co">      code-fold: false </span></span>
+<span id="cb74-14"><a href="#cb74-14" aria-hidden="true" tabindex="-1"></a><span class="co">      code-tools: true  </span></span>
+<span id="cb74-15"><a href="#cb74-15" aria-hidden="true" tabindex="-1"></a><span class="co">      theme: </span></span>
+<span id="cb74-16"><a href="#cb74-16" aria-hidden="true" tabindex="-1"></a><span class="co">        light: cosmo</span></span>
+<span id="cb74-17"><a href="#cb74-17" aria-hidden="true" tabindex="-1"></a><span class="co">        dark: superhero</span></span>
+<span id="cb74-18"><a href="#cb74-18" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> "true" </span></span>
+<span id="cb74-19"><a href="#cb74-19" aria-hidden="true" tabindex="-1"></a><span class="an">code-annotations:</span><span class="co"> hover</span></span>
+<span id="cb74-20"><a href="#cb74-20" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb74-21"><a href="#cb74-21" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb74-22"><a href="#cb74-22" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
+<span id="cb74-23"><a href="#cb74-23" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb74-24"><a href="#cb74-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-25"><a href="#cb74-25" aria-hidden="true" tabindex="-1"></a><span class="fu"># Instalação de pacotes</span></span>
+<span id="cb74-26"><a href="#cb74-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-27"><a href="#cb74-27" aria-hidden="true" tabindex="-1"></a>Ao instalar os pacotes no início de qualquer projeto, garantimos o acesso a um ecossistema padronizado e poderoso, eliminando a necessidade de procurar soluções fragmentadas para diferentes partes do fluxo de trabalho, o que acelera o processo de desenvolvimento e reduz erros.</span>
+<span id="cb74-28"><a href="#cb74-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-29"><a href="#cb74-29" aria-hidden="true" tabindex="-1"></a>Todas as bibliotecas enviadas como necessárias para instalação foram instaladas via terminal utlizando *pip install nome-pacote==version*.</span>
+<span id="cb74-30"><a href="#cb74-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-31"><a href="#cb74-31" aria-hidden="true" tabindex="-1"></a>É importante ressaltar que estou utilizando a IDE RStudio. Essa IDE é passivel de programação em python através do pacote <span class="co">[</span><span class="ot">reticulate</span><span class="co">](https://cran.r-project.org/web/packages/reticulate/index.html)</span>. Como interface estou utilizando o <span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org/docs/get-started/hello/rstudio.html)</span>.</span>
+<span id="cb74-32"><a href="#cb74-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-35"><a href="#cb74-35" aria-hidden="true" tabindex="-1"></a><span class="in">```{markdown}</span></span>
+<span id="cb74-36"><a href="#cb74-36" aria-hidden="true" tabindex="-1"></a>R version 4.4.2 (2024-10-31) -- "Pile of Leaves"</span>
+<span id="cb74-37"><a href="#cb74-37" aria-hidden="true" tabindex="-1"></a>Copyright (C) 2024 The R Foundation for Statistical Computing</span>
+<span id="cb74-38"><a href="#cb74-38" aria-hidden="true" tabindex="-1"></a>Platform: x86_64-pc-linux-gnu</span>
+<span id="cb74-39"><a href="#cb74-39" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-40"><a href="#cb74-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-43"><a href="#cb74-43" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-44"><a href="#cb74-44" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb74-45"><a href="#cb74-45" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
+<span id="cb74-46"><a href="#cb74-46" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb74-47"><a href="#cb74-47" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-48"><a href="#cb74-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-51"><a href="#cb74-51" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-52"><a href="#cb74-52" aria-hidden="true" tabindex="-1"></a><span class="co"># pandas==1.3.3</span></span>
+<span id="cb74-53"><a href="#cb74-53" aria-hidden="true" tabindex="-1"></a><span class="co"># numpy==1.21.2</span></span>
+<span id="cb74-54"><a href="#cb74-54" aria-hidden="true" tabindex="-1"></a><span class="co"># scipy==1.7.1</span></span>
+<span id="cb74-55"><a href="#cb74-55" aria-hidden="true" tabindex="-1"></a><span class="co"># matplotlib==3.4.3</span></span>
+<span id="cb74-56"><a href="#cb74-56" aria-hidden="true" tabindex="-1"></a><span class="co"># scikit-learn==0.24.2</span></span>
+<span id="cb74-57"><a href="#cb74-57" aria-hidden="true" tabindex="-1"></a><span class="co"># statsmodels==0.12.2</span></span>
+<span id="cb74-58"><a href="#cb74-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-59"><a href="#cb74-59" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas</span>
+<span id="cb74-60"><a href="#cb74-60" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy</span>
+<span id="cb74-61"><a href="#cb74-61" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy</span>
+<span id="cb74-62"><a href="#cb74-62" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span>
+<span id="cb74-63"><a href="#cb74-63" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn</span>
+<span id="cb74-64"><a href="#cb74-64" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels</span>
+<span id="cb74-65"><a href="#cb74-65" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-66"><a href="#cb74-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-67"><a href="#cb74-67" aria-hidden="true" tabindex="-1"></a><span class="fu"># Question 1: *Data Cleaning and Basic Analysis*</span></span>
+<span id="cb74-68"><a href="#cb74-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-69"><a href="#cb74-69" aria-hidden="true" tabindex="-1"></a>Work with sales data to demonstrate your ability to handle missing values and perform basic statistical analysis.</span>
+<span id="cb74-70"><a href="#cb74-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-71"><a href="#cb74-71" aria-hidden="true" tabindex="-1"></a>::: panel-tabset</span>
+<span id="cb74-72"><a href="#cb74-72" aria-hidden="true" tabindex="-1"></a><span class="fu"># Python</span></span>
+<span id="cb74-73"><a href="#cb74-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-74"><a href="#cb74-74" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Load and examine the dataset</span>
+<span id="cb74-75"><a href="#cb74-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-76"><a href="#cb74-76" aria-hidden="true" tabindex="-1"></a>Fazendo upload da base de dados.</span>
+<span id="cb74-77"><a href="#cb74-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-80"><a href="#cb74-80" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-81"><a href="#cb74-81" aria-hidden="true" tabindex="-1"></a>sales_data <span class="op">=</span> pandas.read_csv(<span class="st">"technical-interview/data/sales_data.csv"</span>)</span>
+<span id="cb74-82"><a href="#cb74-82" aria-hidden="true" tabindex="-1"></a>customer_purchases <span class="op">=</span> pandas.read_csv(<span class="st">"technical-interview/data/customer_purchases.csv"</span>)</span>
+<span id="cb74-83"><a href="#cb74-83" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-84"><a href="#cb74-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-85"><a href="#cb74-85" aria-hidden="true" tabindex="-1"></a>Verifiquei que não há chave entre as bases para um futuro join.</span>
+<span id="cb74-86"><a href="#cb74-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-87"><a href="#cb74-87" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Clean the data:</span>
+<span id="cb74-88"><a href="#cb74-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-89"><a href="#cb74-89" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Handle missing values in the 'price' column (replace with mean)</span>
+<span id="cb74-90"><a href="#cb74-90" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Handle missing values in the 'category' column (replace with mode)</span>
+<span id="cb74-91"><a href="#cb74-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-92"><a href="#cb74-92" aria-hidden="true" tabindex="-1"></a>É possível notar que há 30 valores ausentes na coluna *category*. Como é solicitado, é necessário inserir a moda (mode), que pela frequência é a categoria *Electronics*, visto que a definição de moda é aquela categoria/número que mais se repete.</span>
+<span id="cb74-93"><a href="#cb74-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-96"><a href="#cb74-96" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-97"><a href="#cb74-97" aria-hidden="true" tabindex="-1"></a>frequency_table <span class="op">=</span> sales_data[<span class="st">'category'</span>].value_counts(dropna<span class="op">=</span><span class="va">False</span>).reset_index()</span>
+<span id="cb74-98"><a href="#cb74-98" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(frequency_table)</span>
+<span id="cb74-99"><a href="#cb74-99" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-100"><a href="#cb74-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-101"><a href="#cb74-101" aria-hidden="true" tabindex="-1"></a>No caso da variável **price**, utilizarei a função *describe*, visto que essa variável é numérica continua. Logo, podemos concluir que há 49 valores ausentes, sua média é de 101.88 e demais informações de 1°,2°, 3° quartil, minimo e máximo.</span>
+<span id="cb74-102"><a href="#cb74-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-105"><a href="#cb74-105" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-106"><a href="#cb74-106" aria-hidden="true" tabindex="-1"></a>summary_table <span class="op">=</span> sales_data[<span class="st">'price'</span>].describe()</span>
+<span id="cb74-107"><a href="#cb74-107" aria-hidden="true" tabindex="-1"></a>summary_table</span>
+<span id="cb74-108"><a href="#cb74-108" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-109"><a href="#cb74-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-110"><a href="#cb74-110" aria-hidden="true" tabindex="-1"></a>O número de valores ausentes é:</span>
+<span id="cb74-111"><a href="#cb74-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-114"><a href="#cb74-114" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-115"><a href="#cb74-115" aria-hidden="true" tabindex="-1"></a>valor_na <span class="op">=</span> sales_data[<span class="st">'price'</span>].isna().<span class="bu">sum</span>()</span>
+<span id="cb74-116"><a href="#cb74-116" aria-hidden="true" tabindex="-1"></a>valor_na</span>
+<span id="cb74-117"><a href="#cb74-117" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-118"><a href="#cb74-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-119"><a href="#cb74-119" aria-hidden="true" tabindex="-1"></a>Para que não haja erro de consultas futuramente, irei criar uma nova variável com essas alterações. Essa variável será denominada por *category_Mode* e, para variável *price* como *price_Mean*. Sendo assim,</span>
+<span id="cb74-120"><a href="#cb74-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-123"><a href="#cb74-123" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-124"><a href="#cb74-124" aria-hidden="true" tabindex="-1"></a>Mean_price <span class="op">=</span> sales_data[<span class="st">'price'</span>].mean()</span>
+<span id="cb74-125"><a href="#cb74-125" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'price_Mean'</span>]  <span class="op">=</span> sales_data[<span class="st">'price'</span>].fillna(Mean_price)</span>
+<span id="cb74-126"><a href="#cb74-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-127"><a href="#cb74-127" aria-hidden="true" tabindex="-1"></a>Mode_category <span class="op">=</span> sales_data[<span class="st">'category'</span>].mode()[<span class="dv">0</span>]</span>
+<span id="cb74-128"><a href="#cb74-128" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'category_Mode'</span>]  <span class="op">=</span> sales_data[<span class="st">'category'</span>].fillna(Mode_category)</span>
+<span id="cb74-129"><a href="#cb74-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-130"><a href="#cb74-130" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-131"><a href="#cb74-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-132"><a href="#cb74-132" aria-hidden="true" tabindex="-1"></a>Avaliando os NA's, veja que não há mais valores ausentes.</span>
+<span id="cb74-133"><a href="#cb74-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-136"><a href="#cb74-136" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-137"><a href="#cb74-137" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'price_Mean'</span>].isna().<span class="bu">sum</span>()</span>
+<span id="cb74-138"><a href="#cb74-138" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'category_Mode'</span>].isna().<span class="bu">sum</span>()</span>
+<span id="cb74-139"><a href="#cb74-139" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-140"><a href="#cb74-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-141"><a href="#cb74-141" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Convert 'sale_date' to datetime</span>
+<span id="cb74-142"><a href="#cb74-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-143"><a href="#cb74-143" aria-hidden="true" tabindex="-1"></a>Em relação a variável *sale_date* temos que esta pertence a classe *Date*, para que esta seja *datetime*,</span>
+<span id="cb74-144"><a href="#cb74-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-147"><a href="#cb74-147" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-148"><a href="#cb74-148" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'sale_date'</span>] <span class="op">=</span> pandas.to_datetime(sales_data[<span class="st">'sale_date'</span>])</span>
+<span id="cb74-149"><a href="#cb74-149" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-150"><a href="#cb74-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-151"><a href="#cb74-151" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Create a summary of:</span>
+<span id="cb74-152"><a href="#cb74-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-153"><a href="#cb74-153" aria-hidden="true" tabindex="-1"></a>Para as tabelas resumo estou considerando as variáveis *sem* os valores ausentes.</span>
+<span id="cb74-154"><a href="#cb74-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-155"><a href="#cb74-155" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Total number of sales per category</span>
+<span id="cb74-156"><a href="#cb74-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-159"><a href="#cb74-159" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-160"><a href="#cb74-160" aria-hidden="true" tabindex="-1"></a>totalNumber_category <span class="op">=</span> sales_data.groupby(<span class="st">'category_Mode'</span>).size()</span>
+<span id="cb74-161"><a href="#cb74-161" aria-hidden="true" tabindex="-1"></a>totalNumber_category</span>
+<span id="cb74-162"><a href="#cb74-162" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-163"><a href="#cb74-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-164"><a href="#cb74-164" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Average price per category</span>
+<span id="cb74-165"><a href="#cb74-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-166"><a href="#cb74-166" aria-hidden="true" tabindex="-1"></a>Para *Average price per category*:</span>
+<span id="cb74-167"><a href="#cb74-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-170"><a href="#cb74-170" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-171"><a href="#cb74-171" aria-hidden="true" tabindex="-1"></a>averagePrice_category <span class="op">=</span> sales_data.groupby(<span class="st">'category_Mode'</span>).mean(<span class="st">'price'</span>)</span>
+<span id="cb74-172"><a href="#cb74-172" aria-hidden="true" tabindex="-1"></a>averagePrice_category</span>
+<span id="cb74-173"><a href="#cb74-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-174"><a href="#cb74-174" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-175"><a href="#cb74-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-176"><a href="#cb74-176" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Number of missing values handled</span>
+<span id="cb74-177"><a href="#cb74-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-178"><a href="#cb74-178" aria-hidden="true" tabindex="-1"></a>Para *Number of missing values handled*, vimos que manipulamos um total de 79 caselas.</span>
+<span id="cb74-179"><a href="#cb74-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-182"><a href="#cb74-182" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-183"><a href="#cb74-183" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'price'</span>].isna().<span class="bu">sum</span>()</span>
+<span id="cb74-184"><a href="#cb74-184" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'category'</span>].isna().<span class="bu">sum</span>()</span>
+<span id="cb74-185"><a href="#cb74-185" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-186"><a href="#cb74-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-187"><a href="#cb74-187" aria-hidden="true" tabindex="-1"></a><span class="fu"># R</span></span>
+<span id="cb74-188"><a href="#cb74-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-189"><a href="#cb74-189" aria-hidden="true" tabindex="-1"></a>Fazendo upload da base de dados.</span>
+<span id="cb74-190"><a href="#cb74-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-193"><a href="#cb74-193" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-194"><a href="#cb74-194" aria-hidden="true" tabindex="-1"></a>customer_purchases_R <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="st">"technical-interview/data/customer_purchases.csv"</span>)</span>
+<span id="cb74-195"><a href="#cb74-195" aria-hidden="true" tabindex="-1"></a>sales_data_R <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="st">"technical-interview/data/sales_data.csv"</span>)</span>
+<span id="cb74-196"><a href="#cb74-196" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-197"><a href="#cb74-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-198"><a href="#cb74-198" aria-hidden="true" tabindex="-1"></a>É possível notar que há 30 valores ausentes na coluna *category*. Como é solicitado, é necessário inserir a moda (mode), que pela frequência é a categoria *Electronics*, visto que a definição de moda é aquela categoria/número que mais se repete.</span>
+<span id="cb74-199"><a href="#cb74-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-202"><a href="#cb74-202" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-203"><a href="#cb74-203" aria-hidden="true" tabindex="-1"></a>janitor<span class="sc">::</span><span class="fu">tabyl</span>(sales_data_R<span class="sc">$</span>category, <span class="at">show_na =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb74-204"><a href="#cb74-204" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-205"><a href="#cb74-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-206"><a href="#cb74-206" aria-hidden="true" tabindex="-1"></a>No caso da variável **price**, utilizarei a função *summary*, visto que essa variável é numérica continua. Logo, podemos concluir que há 49 valores ausentes, sua média é de 101.88 e demais informações de 1°,2°, 3° quartil, minimo e máximo.</span>
+<span id="cb74-207"><a href="#cb74-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-210"><a href="#cb74-210" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-211"><a href="#cb74-211" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(sales_data_R<span class="sc">$</span>price)</span>
+<span id="cb74-212"><a href="#cb74-212" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-213"><a href="#cb74-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-214"><a href="#cb74-214" aria-hidden="true" tabindex="-1"></a>Para que não haja erro de consultas futuramente, irei criar uma nova variável com essas alterações. Essa variável será denominada por *category_Mode* e, para variável *price* como *price_Mean*. Sendo assim,</span>
+<span id="cb74-215"><a href="#cb74-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-218"><a href="#cb74-218" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-219"><a href="#cb74-219" aria-hidden="true" tabindex="-1"></a>sales_data_R <span class="ot">&lt;-</span> sales_data_R <span class="sc">%&gt;%</span> </span>
+<span id="cb74-220"><a href="#cb74-220" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">category_Mode =</span> base<span class="sc">::</span><span class="fu">ifelse</span>(<span class="fu">is.na</span>(category), <span class="st">"Electronics"</span>, category),</span>
+<span id="cb74-221"><a href="#cb74-221" aria-hidden="true" tabindex="-1"></a>                <span class="at">price_Mean =</span> base<span class="sc">::</span><span class="fu">ifelse</span>(<span class="fu">is.na</span>(price), base<span class="sc">::</span><span class="fu">mean</span>(price, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), price))</span>
+<span id="cb74-222"><a href="#cb74-222" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-223"><a href="#cb74-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-224"><a href="#cb74-224" aria-hidden="true" tabindex="-1"></a>Avaliando a variável *category_Mode*:</span>
+<span id="cb74-225"><a href="#cb74-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-228"><a href="#cb74-228" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-229"><a href="#cb74-229" aria-hidden="true" tabindex="-1"></a>janitor<span class="sc">::</span><span class="fu">tabyl</span>(sales_data_R<span class="sc">$</span>category_Mode, <span class="at">show_na =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb74-230"><a href="#cb74-230" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-231"><a href="#cb74-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-232"><a href="#cb74-232" aria-hidden="true" tabindex="-1"></a>Avaliando a variável *price_Mean*:</span>
+<span id="cb74-233"><a href="#cb74-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-236"><a href="#cb74-236" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-237"><a href="#cb74-237" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(sales_data_R<span class="sc">$</span>price_Mean)</span>
+<span id="cb74-238"><a href="#cb74-238" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-239"><a href="#cb74-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-240"><a href="#cb74-240" aria-hidden="true" tabindex="-1"></a>Veja que não há mais valores ausentes.</span>
+<span id="cb74-241"><a href="#cb74-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-242"><a href="#cb74-242" aria-hidden="true" tabindex="-1"></a>Em relação a variável *sale_date* temos que esta pertence a classe *Date*, para que esta seja *datetime*,</span>
+<span id="cb74-243"><a href="#cb74-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-246"><a href="#cb74-246" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-247"><a href="#cb74-247" aria-hidden="true" tabindex="-1"></a>sales_data_R <span class="ot">&lt;-</span> sales_data_R <span class="sc">%&gt;%</span> </span>
+<span id="cb74-248"><a href="#cb74-248" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">sale_date_datetime =</span> <span class="fu">as.POSIXct</span>(sale_date))</span>
+<span id="cb74-249"><a href="#cb74-249" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-250"><a href="#cb74-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-251"><a href="#cb74-251" aria-hidden="true" tabindex="-1"></a>Avaliando,</span>
+<span id="cb74-252"><a href="#cb74-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-255"><a href="#cb74-255" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-256"><a href="#cb74-256" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(sales_data_R<span class="sc">$</span>sale_date_datetime)</span>
+<span id="cb74-257"><a href="#cb74-257" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-258"><a href="#cb74-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-259"><a href="#cb74-259" aria-hidden="true" tabindex="-1"></a>Para as tabelas resumo estou considerando as variáveis *sem* os valores ausentes,</span>
+<span id="cb74-260"><a href="#cb74-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-261"><a href="#cb74-261" aria-hidden="true" tabindex="-1"></a>Para *Total number of sales per category* foi considerado *sale_id* como indicador para o número de vendas. Veja abaixo o resultado.</span>
+<span id="cb74-262"><a href="#cb74-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-265"><a href="#cb74-265" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-266"><a href="#cb74-266" aria-hidden="true" tabindex="-1"></a>sales_data_R <span class="sc">%&gt;%</span> </span>
+<span id="cb74-267"><a href="#cb74-267" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(category_Mode) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-268"><a href="#cb74-268" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">count</span>()</span>
+<span id="cb74-269"><a href="#cb74-269" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-270"><a href="#cb74-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-271"><a href="#cb74-271" aria-hidden="true" tabindex="-1"></a>Para *Average price per category*:</span>
+<span id="cb74-272"><a href="#cb74-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-275"><a href="#cb74-275" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-276"><a href="#cb74-276" aria-hidden="true" tabindex="-1"></a>sales_data_R <span class="sc">%&gt;%</span> </span>
+<span id="cb74-277"><a href="#cb74-277" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(category_Mode) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-278"><a href="#cb74-278" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">average_price =</span>  <span class="fu">mean</span>(price_Mean))</span>
+<span id="cb74-279"><a href="#cb74-279" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-280"><a href="#cb74-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-281"><a href="#cb74-281" aria-hidden="true" tabindex="-1"></a>Para *Number of missing values handled*, vimos que manipulamos um total de 79 caselas.</span>
+<span id="cb74-282"><a href="#cb74-282" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb74-283"><a href="#cb74-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-284"><a href="#cb74-284" aria-hidden="true" tabindex="-1"></a><span class="fu"># Question 2: Data Manipulation and Aggregation:</span></span>
+<span id="cb74-285"><a href="#cb74-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-286"><a href="#cb74-286" aria-hidden="true" tabindex="-1"></a>Show your skills in transforming and aggregating data to derive meaningful insights.</span>
+<span id="cb74-287"><a href="#cb74-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-288"><a href="#cb74-288" aria-hidden="true" tabindex="-1"></a>::: panel-tabset</span>
+<span id="cb74-289"><a href="#cb74-289" aria-hidden="true" tabindex="-1"></a><span class="fu"># Python</span></span>
+<span id="cb74-290"><a href="#cb74-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-291"><a href="#cb74-291" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Calculate the following metrics per customer:</span>
+<span id="cb74-292"><a href="#cb74-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-293"><a href="#cb74-293" aria-hidden="true" tabindex="-1"></a>O *per customer* é um pouco ambíguo e, por isso, abaixo estão as medidas em sua totalidade e agrupadas por *customer_id*.</span>
+<span id="cb74-294"><a href="#cb74-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-295"><a href="#cb74-295" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Total amount spent</span>
+<span id="cb74-296"><a href="#cb74-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-299"><a href="#cb74-299" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-300"><a href="#cb74-300" aria-hidden="true" tabindex="-1"></a>amountSpent <span class="op">=</span> customer_purchases[<span class="st">'amount'</span>].<span class="bu">sum</span>().<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb74-301"><a href="#cb74-301" aria-hidden="true" tabindex="-1"></a>amountSpent</span>
+<span id="cb74-302"><a href="#cb74-302" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-303"><a href="#cb74-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-306"><a href="#cb74-306" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-307"><a href="#cb74-307" aria-hidden="true" tabindex="-1"></a>amountSpent_PC <span class="op">=</span> customer_purchases.groupby(<span class="st">'customer_id'</span>, as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">'amount'</span>].<span class="bu">sum</span>()</span>
+<span id="cb74-308"><a href="#cb74-308" aria-hidden="true" tabindex="-1"></a>amountSpent_PC</span>
+<span id="cb74-309"><a href="#cb74-309" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-310"><a href="#cb74-310" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-311"><a href="#cb74-311" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Average purchase value</span>
+<span id="cb74-312"><a href="#cb74-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-315"><a href="#cb74-315" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-316"><a href="#cb74-316" aria-hidden="true" tabindex="-1"></a>amountMean <span class="op">=</span> customer_purchases[<span class="st">'amount'</span>].mean()</span>
+<span id="cb74-317"><a href="#cb74-317" aria-hidden="true" tabindex="-1"></a>amountMean</span>
+<span id="cb74-318"><a href="#cb74-318" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-319"><a href="#cb74-319" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-322"><a href="#cb74-322" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-323"><a href="#cb74-323" aria-hidden="true" tabindex="-1"></a>amountMean_PC <span class="op">=</span> customer_purchases.groupby(<span class="st">'customer_id'</span>, as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">'amount'</span>].mean()</span>
+<span id="cb74-324"><a href="#cb74-324" aria-hidden="true" tabindex="-1"></a>amountMean_PC</span>
+<span id="cb74-325"><a href="#cb74-325" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-326"><a href="#cb74-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-327"><a href="#cb74-327" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Number of purchases</span>
+<span id="cb74-328"><a href="#cb74-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-329"><a href="#cb74-329" aria-hidden="true" tabindex="-1"></a>O número de compras é o número total de observações do banco de dados, visto que não há *purchase_id* com repetição. Porém, para cada *customer_id* teremos os seguintes resultados:</span>
+<span id="cb74-330"><a href="#cb74-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-333"><a href="#cb74-333" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-334"><a href="#cb74-334" aria-hidden="true" tabindex="-1"></a>amountCount_PC <span class="op">=</span> customer_purchases.groupby(<span class="st">'customer_id'</span>, as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">'purchase_id'</span>].count()</span>
+<span id="cb74-335"><a href="#cb74-335" aria-hidden="true" tabindex="-1"></a>amountCount_PC</span>
+<span id="cb74-336"><a href="#cb74-336" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-337"><a href="#cb74-337" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-338"><a href="#cb74-338" aria-hidden="true" tabindex="-1"></a>Logo, se consideramos o número de compras por customer, teremos somente 100 compradores.</span>
+<span id="cb74-339"><a href="#cb74-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-342"><a href="#cb74-342" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-343"><a href="#cb74-343" aria-hidden="true" tabindex="-1"></a>amountCount <span class="op">=</span> customer_purchases.groupby(<span class="st">'customer_id'</span>).size()</span>
+<span id="cb74-344"><a href="#cb74-344" aria-hidden="true" tabindex="-1"></a>amountCount</span>
+<span id="cb74-345"><a href="#cb74-345" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-346"><a href="#cb74-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-347"><a href="#cb74-347" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Most frequently bought category</span>
+<span id="cb74-348"><a href="#cb74-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-349"><a href="#cb74-349" aria-hidden="true" tabindex="-1"></a>A categoria mais frequente é a *Home &amp; Garden*.</span>
+<span id="cb74-350"><a href="#cb74-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-353"><a href="#cb74-353" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-354"><a href="#cb74-354" aria-hidden="true" tabindex="-1"></a>freqBought_category <span class="op">=</span> customer_purchases.groupby(<span class="st">'category'</span>).size()</span>
+<span id="cb74-355"><a href="#cb74-355" aria-hidden="true" tabindex="-1"></a>freqBought_category</span>
+<span id="cb74-356"><a href="#cb74-356" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-357"><a href="#cb74-357" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-358"><a href="#cb74-358" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Create a summary DataFrame with:</span>
+<span id="cb74-359"><a href="#cb74-359" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-360"><a href="#cb74-360" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Top 5 customers by total spend</span>
+<span id="cb74-361"><a href="#cb74-361" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-364"><a href="#cb74-364" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-365"><a href="#cb74-365" aria-hidden="true" tabindex="-1"></a>top5_customer <span class="op">=</span> (customer_purchases.groupby(<span class="st">'customer_id'</span>)</span>
+<span id="cb74-366"><a href="#cb74-366" aria-hidden="true" tabindex="-1"></a>          .agg(somaAmount<span class="op">=</span>(<span class="st">'amount'</span>, <span class="st">'sum'</span>))  <span class="co"># Calculando a soma da coluna 'amount'</span></span>
+<span id="cb74-367"><a href="#cb74-367" aria-hidden="true" tabindex="-1"></a>          .reset_index()  <span class="co"># Para garantir que 'customer_id' seja uma coluna normal</span></span>
+<span id="cb74-368"><a href="#cb74-368" aria-hidden="true" tabindex="-1"></a>          .sort_values(by<span class="op">=</span><span class="st">'somaAmount'</span>, ascending<span class="op">=</span><span class="va">False</span>))  <span class="co"># Ordenando pela soma em ordem decrescente</span></span>
+<span id="cb74-369"><a href="#cb74-369" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-370"><a href="#cb74-370" aria-hidden="true" tabindex="-1"></a>top5_customer</span>
+<span id="cb74-371"><a href="#cb74-371" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-372"><a href="#cb74-372" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-373"><a href="#cb74-373" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Bottom 5 customers by total spend</span>
+<span id="cb74-374"><a href="#cb74-374" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-377"><a href="#cb74-377" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-378"><a href="#cb74-378" aria-hidden="true" tabindex="-1"></a>top5_customer <span class="op">=</span> (customer_purchases.groupby(<span class="st">'customer_id'</span>)</span>
+<span id="cb74-379"><a href="#cb74-379" aria-hidden="true" tabindex="-1"></a>          .agg(somaAmount<span class="op">=</span>(<span class="st">'amount'</span>, <span class="st">'sum'</span>))  <span class="co"># Calculando a soma da coluna 'amount'</span></span>
+<span id="cb74-380"><a href="#cb74-380" aria-hidden="true" tabindex="-1"></a>          .reset_index()  <span class="co"># Para garantir que 'customer_id' seja uma coluna normal</span></span>
+<span id="cb74-381"><a href="#cb74-381" aria-hidden="true" tabindex="-1"></a>          .sort_values(by<span class="op">=</span><span class="st">'somaAmount'</span>, ascending<span class="op">=</span><span class="va">True</span>))  <span class="co"># Ordenando pela soma em ordem crescente</span></span>
+<span id="cb74-382"><a href="#cb74-382" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-383"><a href="#cb74-383" aria-hidden="true" tabindex="-1"></a>top5_customer</span>
+<span id="cb74-384"><a href="#cb74-384" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-385"><a href="#cb74-385" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-386"><a href="#cb74-386" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Calculate the monthly purchase trends:</span>
+<span id="cb74-387"><a href="#cb74-387" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-388"><a href="#cb74-388" aria-hidden="true" tabindex="-1"></a>Aqui irei utilizar o banco de dados sales_data.</span>
+<span id="cb74-389"><a href="#cb74-389" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-390"><a href="#cb74-390" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Total sales per month</span>
+<span id="cb74-391"><a href="#cb74-391" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-392"><a href="#cb74-392" aria-hidden="true" tabindex="-1"></a>É necessário fazer a tratativa de datas.</span>
+<span id="cb74-393"><a href="#cb74-393" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-396"><a href="#cb74-396" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-397"><a href="#cb74-397" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'sale_date'</span>] <span class="op">=</span> pandas.to_datetime(sales_data[<span class="st">'sale_date'</span>])</span>
+<span id="cb74-398"><a href="#cb74-398" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-399"><a href="#cb74-399" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-400"><a href="#cb74-400" aria-hidden="true" tabindex="-1"></a>Como o interesse da medida é por mês, a ideia é extrair da data somente o mês.</span>
+<span id="cb74-401"><a href="#cb74-401" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-404"><a href="#cb74-404" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-405"><a href="#cb74-405" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'mes_Sale'</span>] <span class="op">=</span> sales_data[<span class="st">'sale_date'</span>].dt.month</span>
+<span id="cb74-406"><a href="#cb74-406" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-407"><a href="#cb74-407" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-408"><a href="#cb74-408" aria-hidden="true" tabindex="-1"></a>Há, desde o início, a prerrogativa de trataiva dos valores ausente da variável *price* com sua respectiva média, sendo assim:</span>
+<span id="cb74-409"><a href="#cb74-409" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-412"><a href="#cb74-412" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-413"><a href="#cb74-413" aria-hidden="true" tabindex="-1"></a>mean_price <span class="op">=</span> sales_data[<span class="st">'price'</span>].mean() </span>
+<span id="cb74-414"><a href="#cb74-414" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'price'</span>] <span class="op">=</span> sales_data[<span class="st">'price'</span>].fillna(mean_price) </span>
+<span id="cb74-415"><a href="#cb74-415" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-416"><a href="#cb74-416" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-417"><a href="#cb74-417" aria-hidden="true" tabindex="-1"></a>É importante ressaltar que não há em escrito que a variável price seja por unidade, mas como há a variável *quantity* e para um bom analista, tira-se por base que a variável *price* é por unidade. Sendo assim, devemos multiplicar o preço pelo número de unidades para alcançar o valor real gasto na compra.</span>
+<span id="cb74-418"><a href="#cb74-418" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-421"><a href="#cb74-421" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-422"><a href="#cb74-422" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'sales'</span>] <span class="op">=</span> sales_data[<span class="st">'price'</span>]<span class="op">*</span>sales_data[<span class="st">'quantity'</span>]</span>
+<span id="cb74-423"><a href="#cb74-423" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-424"><a href="#cb74-424" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-425"><a href="#cb74-425" aria-hidden="true" tabindex="-1"></a>A solicitação é o valor gasto por mês, logo há a necessidade de agrupar por mês o valor total gasto na compra.</span>
+<span id="cb74-426"><a href="#cb74-426" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-429"><a href="#cb74-429" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-430"><a href="#cb74-430" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'totalSales'</span>] <span class="op">=</span> sales_data.groupby(<span class="st">'mes_Sale'</span>)[<span class="st">'sales'</span>].transform(<span class="st">'sum'</span>)</span>
+<span id="cb74-431"><a href="#cb74-431" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-432"><a href="#cb74-432" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-433"><a href="#cb74-433" aria-hidden="true" tabindex="-1"></a>A seguir a tabela resultado:</span>
+<span id="cb74-434"><a href="#cb74-434" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-437"><a href="#cb74-437" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-438"><a href="#cb74-438" aria-hidden="true" tabindex="-1"></a>distinct_sales_data <span class="op">=</span> sales_data.drop_duplicates(subset<span class="op">=</span>[<span class="st">'mes_Sale'</span>])</span>
+<span id="cb74-439"><a href="#cb74-439" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(distinct_sales_data)</span>
+<span id="cb74-440"><a href="#cb74-440" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-441"><a href="#cb74-441" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-442"><a href="#cb74-442" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Average purchase value per month</span>
+<span id="cb74-443"><a href="#cb74-443" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-444"><a href="#cb74-444" aria-hidden="true" tabindex="-1"></a>Como este caso é para a compra, seguiremos a mesma lógica da questão anterior, porém com o banco de dados *customer*. É importante ressaltar que no caso da variável *amount* não temos valores faltantes.</span>
+<span id="cb74-445"><a href="#cb74-445" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-448"><a href="#cb74-448" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-449"><a href="#cb74-449" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'purchase_date'</span>] <span class="op">=</span> pandas.to_datetime(customer_purchases[<span class="st">'purchase_date'</span>])</span>
+<span id="cb74-450"><a href="#cb74-450" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'mes_Purchase'</span>] <span class="op">=</span> customer_purchases[<span class="st">'purchase_date'</span>].dt.month</span>
+<span id="cb74-451"><a href="#cb74-451" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-452"><a href="#cb74-452" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'totalCustomer'</span>] <span class="op">=</span> customer_purchases.groupby(<span class="st">'mes_Purchase'</span>)[<span class="st">'amount'</span>].transform(<span class="st">'mean'</span>)</span>
+<span id="cb74-453"><a href="#cb74-453" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-454"><a href="#cb74-454" aria-hidden="true" tabindex="-1"></a>distinct_customer_data <span class="op">=</span> customer_purchases.drop_duplicates(subset<span class="op">=</span>[<span class="st">'mes_Purchase'</span>])</span>
+<span id="cb74-455"><a href="#cb74-455" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(distinct_customer_data)</span>
+<span id="cb74-456"><a href="#cb74-456" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-457"><a href="#cb74-457" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-458"><a href="#cb74-458" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Bonus: Identify any customers who haven't made a purchase in the last 3 months</span>
+<span id="cb74-459"><a href="#cb74-459" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-460"><a href="#cb74-460" aria-hidden="true" tabindex="-1"></a>Utilizando a data de 27/01/2025 como data diária, no banco de dados oferecido todos os clientes não fizeram compras nos últimos 3 meses. Devido a este caso, vou utilizar a data máxima do banco de dados que é 2023-10-27 como referência. Sendo assim, teremos *5* clientes que não compram há mais de 3 meses.</span>
+<span id="cb74-461"><a href="#cb74-461" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-462"><a href="#cb74-462" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>CUST_041</span>
+<span id="cb74-463"><a href="#cb74-463" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>CUST_048</span>
+<span id="cb74-464"><a href="#cb74-464" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>CUST_031</span>
+<span id="cb74-465"><a href="#cb74-465" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>CUST_016</span>
+<span id="cb74-466"><a href="#cb74-466" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>CUST_067</span>
+<span id="cb74-467"><a href="#cb74-467" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-468"><a href="#cb74-468" aria-hidden="true" tabindex="-1"></a>Para chegar a esta conclusão utilizei os seguintes passo:</span>
+<span id="cb74-469"><a href="#cb74-469" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-470"><a href="#cb74-470" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Criando a coluna com data especificada e inserindo no banco de dados:</span>
+<span id="cb74-471"><a href="#cb74-471" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-474"><a href="#cb74-474" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-475"><a href="#cb74-475" aria-hidden="true" tabindex="-1"></a>data_estudo <span class="op">=</span> pandas.to_datetime(<span class="st">"2023-10-27"</span>)</span>
+<span id="cb74-476"><a href="#cb74-476" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'data_estudo'</span>] <span class="op">=</span> data_estudo</span>
+<span id="cb74-477"><a href="#cb74-477" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-478"><a href="#cb74-478" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-479"><a href="#cb74-479" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Para que haja a dioferença de datas, ambas precisam estar na mesma classe:</span>
+<span id="cb74-480"><a href="#cb74-480" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-483"><a href="#cb74-483" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-484"><a href="#cb74-484" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'data_estudo'</span>] <span class="op">=</span> pandas.to_datetime(customer_purchases[<span class="st">'data_estudo'</span>])</span>
+<span id="cb74-485"><a href="#cb74-485" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'purchase_date'</span>] <span class="op">=</span> pandas.to_datetime(customer_purchases[<span class="st">'purchase_date'</span>])</span>
+<span id="cb74-486"><a href="#cb74-486" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-487"><a href="#cb74-487" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-488"><a href="#cb74-488" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Fazendo a diferença entre as datas e contabilizando o número de dias, lembrando que o nosso interesse é em contar aqueles que não compram a mais de 3 meses (90 dias).</span>
+<span id="cb74-489"><a href="#cb74-489" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-492"><a href="#cb74-492" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-493"><a href="#cb74-493" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'puchase_Day'</span>] <span class="op">=</span> (customer_purchases[<span class="st">'purchase_date'</span>] <span class="op">-</span> customer_purchases[<span class="st">'data_estudo'</span>]).dt.days</span>
+<span id="cb74-494"><a href="#cb74-494" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-495"><a href="#cb74-495" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-496"><a href="#cb74-496" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Se o interesse é naqueles que não compram a mais de 90 dias, pensei em criar uma dummy com SIM e NÃO para aqueles que não compram a -90 dias, ou seja, o meu interesse é por aquele que será classificado como SIM.</span>
+<span id="cb74-497"><a href="#cb74-497" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-500"><a href="#cb74-500" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-501"><a href="#cb74-501" aria-hidden="true" tabindex="-1"></a>customer_purchases[<span class="st">'puchase_Day3'</span>] <span class="op">=</span> customer_purchases[<span class="st">'puchase_Day'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: <span class="st">'Sim'</span> <span class="cf">if</span> x <span class="op">&lt;</span> <span class="op">-</span><span class="dv">90</span> <span class="cf">else</span> <span class="st">'Não'</span>)</span>
+<span id="cb74-502"><a href="#cb74-502" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-503"><a href="#cb74-503" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-504"><a href="#cb74-504" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Esse é o momento crucial para a análise, visto que o mesmo customer poderá estar classificado como SIM e NÃO, visto que este customer pode fazer mais de uma compra, inclusive, de produtos diferentes. Ou seja, ele não compra há mais de 90 dias aquele determinado produto, mas comprou outros, o que faz que ele não se encaixe nessa categoria de clientes que não compram há mais de 90 dias.</span>
+<span id="cb74-505"><a href="#cb74-505" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-508"><a href="#cb74-508" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-509"><a href="#cb74-509" aria-hidden="true" tabindex="-1"></a>bonusCustomer <span class="op">=</span> customer_purchases.groupby(<span class="st">'customer_id'</span>)[<span class="st">'puchase_Day3'</span>].value_counts().reset_index(name<span class="op">=</span><span class="st">'count'</span>)</span>
+<span id="cb74-510"><a href="#cb74-510" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bonusCustomer)</span>
+<span id="cb74-511"><a href="#cb74-511" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-512"><a href="#cb74-512" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-513"><a href="#cb74-513" aria-hidden="true" tabindex="-1"></a><span class="fu"># R</span></span>
+<span id="cb74-514"><a href="#cb74-514" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-515"><a href="#cb74-515" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Calculate the following metrics per customer:</span>
+<span id="cb74-516"><a href="#cb74-516" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-517"><a href="#cb74-517" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Total amount spent</span>
+<span id="cb74-518"><a href="#cb74-518" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-521"><a href="#cb74-521" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-522"><a href="#cb74-522" aria-hidden="true" tabindex="-1"></a>base<span class="sc">::</span><span class="fu">sum</span>(customer_purchases_R<span class="sc">$</span>amount)</span>
+<span id="cb74-523"><a href="#cb74-523" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-524"><a href="#cb74-524" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-525"><a href="#cb74-525" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Average purchase value</span>
+<span id="cb74-526"><a href="#cb74-526" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-529"><a href="#cb74-529" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-530"><a href="#cb74-530" aria-hidden="true" tabindex="-1"></a>base<span class="sc">::</span><span class="fu">mean</span>(customer_purchases_R<span class="sc">$</span>amount)</span>
+<span id="cb74-531"><a href="#cb74-531" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-532"><a href="#cb74-532" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-533"><a href="#cb74-533" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Number of purchases</span>
+<span id="cb74-534"><a href="#cb74-534" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-535"><a href="#cb74-535" aria-hidden="true" tabindex="-1"></a>O número de compras é o número total de observações, visto que não há *purchase_id* com repetição.</span>
+<span id="cb74-536"><a href="#cb74-536" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-539"><a href="#cb74-539" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-540"><a href="#cb74-540" aria-hidden="true" tabindex="-1"></a>customer_purchases <span class="sc">%&gt;%</span> </span>
+<span id="cb74-541"><a href="#cb74-541" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">count</span>(purchase_id) </span>
+<span id="cb74-542"><a href="#cb74-542" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-543"><a href="#cb74-543" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-544"><a href="#cb74-544" aria-hidden="true" tabindex="-1"></a>Porém, se consideramos o número de compras por customer, teremos somente 100 compras.</span>
+<span id="cb74-545"><a href="#cb74-545" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-548"><a href="#cb74-548" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-549"><a href="#cb74-549" aria-hidden="true" tabindex="-1"></a>customer_purchases <span class="sc">%&gt;%</span> </span>
+<span id="cb74-550"><a href="#cb74-550" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">group_by</span>(customer_id) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-551"><a href="#cb74-551" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">count</span>()</span>
+<span id="cb74-552"><a href="#cb74-552" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-553"><a href="#cb74-553" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-554"><a href="#cb74-554" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Most frequently bought category</span>
+<span id="cb74-555"><a href="#cb74-555" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-558"><a href="#cb74-558" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-559"><a href="#cb74-559" aria-hidden="true" tabindex="-1"></a>customer_purchases_R <span class="sc">%&gt;%</span> </span>
+<span id="cb74-560"><a href="#cb74-560" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(category) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-561"><a href="#cb74-561" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">count</span>()</span>
+<span id="cb74-562"><a href="#cb74-562" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-563"><a href="#cb74-563" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-564"><a href="#cb74-564" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Create a summary DataFrame with:</span>
+<span id="cb74-565"><a href="#cb74-565" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-566"><a href="#cb74-566" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Top 5 customers by total spend</span>
+<span id="cb74-567"><a href="#cb74-567" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-570"><a href="#cb74-570" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-571"><a href="#cb74-571" aria-hidden="true" tabindex="-1"></a>customer_purchases_R <span class="sc">%&gt;%</span> </span>
+<span id="cb74-572"><a href="#cb74-572" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(customer_id) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-573"><a href="#cb74-573" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">meanCustomer =</span> base<span class="sc">::</span><span class="fu">mean</span>(amount)) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-574"><a href="#cb74-574" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(<span class="fu">desc</span>(meanCustomer))</span>
+<span id="cb74-575"><a href="#cb74-575" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-576"><a href="#cb74-576" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-577"><a href="#cb74-577" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Bottom 5 customers by total spend</span>
+<span id="cb74-578"><a href="#cb74-578" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-581"><a href="#cb74-581" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-582"><a href="#cb74-582" aria-hidden="true" tabindex="-1"></a>customer_purchases_R <span class="sc">%&gt;%</span> </span>
+<span id="cb74-583"><a href="#cb74-583" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(customer_id) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-584"><a href="#cb74-584" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">meanCustomer =</span> base<span class="sc">::</span><span class="fu">mean</span>(amount)) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-585"><a href="#cb74-585" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>((meanCustomer))</span>
+<span id="cb74-586"><a href="#cb74-586" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-587"><a href="#cb74-587" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-588"><a href="#cb74-588" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Calculate the monthly purchase trends:</span>
+<span id="cb74-589"><a href="#cb74-589" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-590"><a href="#cb74-590" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Total sales per month</span>
+<span id="cb74-591"><a href="#cb74-591" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-594"><a href="#cb74-594" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-595"><a href="#cb74-595" aria-hidden="true" tabindex="-1"></a>sales_data_R <span class="sc">%&gt;%</span> </span>
+<span id="cb74-596"><a href="#cb74-596" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">mes_Sale =</span> lubridate<span class="sc">::</span><span class="fu">month</span>(sale_date)) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-597"><a href="#cb74-597" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">price =</span> base<span class="sc">::</span><span class="fu">ifelse</span>(<span class="fu">is.na</span>(price), base<span class="sc">::</span><span class="fu">mean</span>(price, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), price),</span>
+<span id="cb74-598"><a href="#cb74-598" aria-hidden="true" tabindex="-1"></a>                <span class="at">sales =</span> quantity<span class="sc">*</span>price) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-599"><a href="#cb74-599" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(mes_Sale) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-600"><a href="#cb74-600" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">totalSales =</span> <span class="fu">sum</span>(sales)) </span>
+<span id="cb74-601"><a href="#cb74-601" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-602"><a href="#cb74-602" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-603"><a href="#cb74-603" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Average purchase value per month</span>
+<span id="cb74-604"><a href="#cb74-604" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-607"><a href="#cb74-607" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-608"><a href="#cb74-608" aria-hidden="true" tabindex="-1"></a>customer_purchases_R <span class="sc">%&gt;%</span> </span>
+<span id="cb74-609"><a href="#cb74-609" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">mes_Purchase =</span> lubridate<span class="sc">::</span><span class="fu">month</span>(purchase_date)) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-610"><a href="#cb74-610" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(mes_Purchase) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-611"><a href="#cb74-611" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">totalPurchase =</span> <span class="fu">mean</span>(amount)) </span>
+<span id="cb74-612"><a href="#cb74-612" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-613"><a href="#cb74-613" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-614"><a href="#cb74-614" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Bonus: Identify any customers who haven't made a purchase in the last 3 months</span>
+<span id="cb74-615"><a href="#cb74-615" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-616"><a href="#cb74-616" aria-hidden="true" tabindex="-1"></a>Utilizando a data de 27/01/2025 como data diária, no banco de dados oferecido todos os clientes não fizeram compras nos últimos 3 meses. Devido a este caso, vou utilizar a data máxima do banco de dados que é 2023-10-27 como referência. Sendo assim, teremos *5* clientes que não compram há mais de 3 meses.</span>
+<span id="cb74-617"><a href="#cb74-617" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-618"><a href="#cb74-618" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>CUST_041</span>
+<span id="cb74-619"><a href="#cb74-619" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>CUST_048</span>
+<span id="cb74-620"><a href="#cb74-620" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>CUST_031</span>
+<span id="cb74-621"><a href="#cb74-621" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>CUST_016</span>
+<span id="cb74-622"><a href="#cb74-622" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>CUST_067</span>
+<span id="cb74-623"><a href="#cb74-623" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-626"><a href="#cb74-626" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb74-627"><a href="#cb74-627" aria-hidden="true" tabindex="-1"></a>customer_purchases_R <span class="sc">%&gt;%</span> </span>
+<span id="cb74-628"><a href="#cb74-628" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">data_estudo =</span> <span class="fu">rep</span>(<span class="st">"2023-10-27"</span>, <span class="dv">1000</span>),</span>
+<span id="cb74-629"><a href="#cb74-629" aria-hidden="true" tabindex="-1"></a>                <span class="at">data_estudo      =</span> base<span class="sc">::</span><span class="fu">as.Date</span>(data_estudo),</span>
+<span id="cb74-630"><a href="#cb74-630" aria-hidden="true" tabindex="-1"></a>                <span class="at">puchase_Day =</span> purchase_date <span class="sc">-</span> data_estudo,</span>
+<span id="cb74-631"><a href="#cb74-631" aria-hidden="true" tabindex="-1"></a>                <span class="at">puchase_Day3 =</span> base<span class="sc">::</span><span class="fu">ifelse</span>(puchase_Day <span class="sc">&lt;</span> <span class="sc">-</span><span class="dv">90</span>, <span class="st">"Sim"</span>, <span class="st">"Não"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb74-632"><a href="#cb74-632" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(customer_id) <span class="sc">%&gt;%</span></span>
+<span id="cb74-633"><a href="#cb74-633" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">count</span>(puchase_Day3)</span>
+<span id="cb74-634"><a href="#cb74-634" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-635"><a href="#cb74-635" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb74-636"><a href="#cb74-636" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-637"><a href="#cb74-637" aria-hidden="true" tabindex="-1"></a><span class="fu"># Question 3: Data Visualization:</span></span>
+<span id="cb74-638"><a href="#cb74-638" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-639"><a href="#cb74-639" aria-hidden="true" tabindex="-1"></a>Create informative visualizations to communicate data insights effectively.</span>
+<span id="cb74-640"><a href="#cb74-640" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-641"><a href="#cb74-641" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Create a line plot showing daily sales trends over time</span>
+<span id="cb74-642"><a href="#cb74-642" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Include a 7-day moving average line</span>
+<span id="cb74-643"><a href="#cb74-643" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-644"><a href="#cb74-644" aria-hidden="true" tabindex="-1"></a>Para a construção desse gráfico, vou seguir as seguintes etapas:</span>
+<span id="cb74-645"><a href="#cb74-645" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-646"><a href="#cb74-646" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Como vamos trabalhar com data, ela precisa estar na classe desejada.</span>
+<span id="cb74-647"><a href="#cb74-647" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-650"><a href="#cb74-650" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-651"><a href="#cb74-651" aria-hidden="true" tabindex="-1"></a>sales_data[<span class="st">'sale_date'</span>] <span class="op">=</span> pandas.to_datetime(sales_data[<span class="st">'sale_date'</span>])</span>
+<span id="cb74-652"><a href="#cb74-652" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-653"><a href="#cb74-653" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-654"><a href="#cb74-654" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>O objetivo é que esse plot seja diário de vendas, por isso, independente do produto, devemos agrupar a quantidade de venda por dia, mas nós não temos mais de uma venda por dia, o que temos variando é a quantidade de vendas, o que faz sentido ter uma média móvel.</span>
+<span id="cb74-655"><a href="#cb74-655" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-658"><a href="#cb74-658" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-659"><a href="#cb74-659" aria-hidden="true" tabindex="-1"></a>diaSales <span class="op">=</span> sales_data.groupby(<span class="st">'sale_date'</span>)[<span class="st">'quantity'</span>].<span class="bu">sum</span>().reset_index()</span>
+<span id="cb74-660"><a href="#cb74-660" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-661"><a href="#cb74-661" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-662"><a href="#cb74-662" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Ordenando as datas devido a média a móvel:</span>
+<span id="cb74-663"><a href="#cb74-663" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-666"><a href="#cb74-666" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-667"><a href="#cb74-667" aria-hidden="true" tabindex="-1"></a>diaSales <span class="op">=</span> diaSales.sort_values(by<span class="op">=</span><span class="st">'sale_date'</span>)</span>
+<span id="cb74-668"><a href="#cb74-668" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-669"><a href="#cb74-669" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-670"><a href="#cb74-670" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Calculando a média móvel de 7 dias:</span>
+<span id="cb74-671"><a href="#cb74-671" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-674"><a href="#cb74-674" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-675"><a href="#cb74-675" aria-hidden="true" tabindex="-1"></a>diaSales[<span class="st">'7Dias_avg'</span>] <span class="op">=</span> diaSales[<span class="st">'quantity'</span>].rolling(window<span class="op">=</span><span class="dv">7</span>).mean()</span>
+<span id="cb74-676"><a href="#cb74-676" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-677"><a href="#cb74-677" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-678"><a href="#cb74-678" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Plotando o gráfico:</span>
+<span id="cb74-679"><a href="#cb74-679" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-682"><a href="#cb74-682" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb74-683"><a href="#cb74-683" aria-hidden="true" tabindex="-1"></a><span class="co"># matplotlib.pyplot.figure(figsize=(12, 6))</span></span>
+<span id="cb74-684"><a href="#cb74-684" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb74-685"><a href="#cb74-685" aria-hidden="true" tabindex="-1"></a><span class="co"># matplotlib.pyplot.plot()(diaSales['sale_date'], diaSales['quantity'], label='Vendas Diárias', color='blue', alpha=0.6)</span></span>
+<span id="cb74-686"><a href="#cb74-686" aria-hidden="true" tabindex="-1"></a><span class="co"># matplotlib.pyplot.plot(diaSales['sale_date'], diaSales['7Dias_avg'], label='Média Móvel (7 dias)', color='red', linewidth=2)</span></span>
+<span id="cb74-687"><a href="#cb74-687" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-688"><a href="#cb74-688" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-689"><a href="#cb74-689" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Create a bar plot showing:</span>
+<span id="cb74-690"><a href="#cb74-690" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-691"><a href="#cb74-691" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Total sales by category</span>
+<span id="cb74-692"><a href="#cb74-692" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Include error bars representing standard deviation</span>
+<span id="cb74-693"><a href="#cb74-693" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-694"><a href="#cb74-694" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Create a scatter plot showing:</span>
+<span id="cb74-695"><a href="#cb74-695" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-696"><a href="#cb74-696" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Relationship between quantity and price</span>
+<span id="cb74-697"><a href="#cb74-697" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Color points by category</span>
+<span id="cb74-698"><a href="#cb74-698" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Add a trend line</span>
+<span id="cb74-699"><a href="#cb74-699" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-700"><a href="#cb74-700" aria-hidden="true" tabindex="-1"></a>Requirements: - Use appropriate labels and titles - Include a legend where necessary - Use a consistent color scheme - Save all plots as PNG files</span>
+<span id="cb74-701"><a href="#cb74-701" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-702"><a href="#cb74-702" aria-hidden="true" tabindex="-1"></a><span class="fu"># Question 4: Advanced Analytics (Required for Data Scientists, Bonus for Juniors):</span></span>
+<span id="cb74-703"><a href="#cb74-703" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-704"><a href="#cb74-704" aria-hidden="true" tabindex="-1"></a>Apply advanced statistical methods and machine learning techniques to solve a complex business problem.</span>
+<span id="cb74-705"><a href="#cb74-705" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-706"><a href="#cb74-706" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Implement error handling for the following analyses:</span>
+<span id="cb74-707"><a href="#cb74-707" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-708"><a href="#cb74-708" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Perform a one-way ANOVA test to compare prices across different categories</span>
+<span id="cb74-709"><a href="#cb74-709" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Calculate and plot the confidence intervals for mean prices in each category</span>
+<span id="cb74-710"><a href="#cb74-710" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Identify potential outliers using z-scores</span>
+<span id="cb74-711"><a href="#cb74-711" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-712"><a href="#cb74-712" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Debug and fix the following code snippet that attempts to perform a chi-square test:</span>
+<span id="cb74-713"><a href="#cb74-713" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-714"><a href="#cb74-714" aria-hidden="true" tabindex="-1"></a><span class="in">``` python</span></span>
+<span id="cb74-715"><a href="#cb74-715" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> perform_chi_square(data):</span>
+<span id="cb74-716"><a href="#cb74-716" aria-hidden="true" tabindex="-1"></a>        observed <span class="op">=</span> data.groupby([<span class="st">'category'</span>, <span class="st">'status'</span>]).size()</span>
+<span id="cb74-717"><a href="#cb74-717" aria-hidden="true" tabindex="-1"></a>        chi2, p_value <span class="op">=</span> stats.chi2_contingency(observed)</span>
+<span id="cb74-718"><a href="#cb74-718" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> chi2, p_value</span>
+<span id="cb74-719"><a href="#cb74-719" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb74-720"><a href="#cb74-720" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-721"><a href="#cb74-721" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Implement proper logging to track:</span>
+<span id="cb74-722"><a href="#cb74-722" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-723"><a href="#cb74-723" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Any statistical assumptions violations</span>
+<span id="cb74-724"><a href="#cb74-724" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Data type mismatches</span>
+<span id="cb74-725"><a href="#cb74-725" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Invalid calculations</span>
+<span id="cb74-726"><a href="#cb74-726" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-727"><a href="#cb74-727" aria-hidden="true" tabindex="-1"></a>Your solution should be robust against various edge cases and include appropriate error messages.</span>
+</code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

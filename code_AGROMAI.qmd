@@ -597,12 +597,12 @@ Apply advanced statistical methods and machine learning techniques to solve a co
 
 2.  Debug and fix the following code snippet that attempts to perform a chi-square test:
 
-    ``` python
+``` python
     def perform_chi_square(data):
         observed = data.groupby(['category', 'status']).size()
         chi2, p_value = stats.chi2_contingency(observed)
         return chi2, p_value
-    ```
+```
 
 3.  Implement proper logging to track:
 
