@@ -607,7 +607,11 @@ ggplot(sales_data_R) +
   theme_minimal()
 ```
 
-Requirements: - Use appropriate labels and titles - Include a legend where necessary - Use a consistent color scheme - Save all plots as PNG files
+Requirements: 
+- Use appropriate labels and titles
+- Include a legend where necessary 
+- Use a consistent color scheme 
+- Save all plots as PNG files
 
 # Question 4: Advanced Analytics (Required for Data Scientists, Bonus for Juniors):
 
